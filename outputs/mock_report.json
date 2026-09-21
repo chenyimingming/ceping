@@ -1,0 +1,2515 @@
+{
+  "meta": {
+    "mode": "mock",
+    "model": "mock-rules-v1",
+    "generated_at": "2026-09-21 15:00:11",
+    "timezone": "Asia/Shanghai",
+    "data_fingerprint": {
+      "auto_replies.json": "7d431d59ef68",
+      "human_ref.json": "5995bf08b7fc",
+      "human_signals.json": "3d1e097f7381"
+    },
+    "tool": "run_eval.py",
+    "note": "规则基线：离线、零成本、可复现；用于与 LLM 评审对照"
+  },
+  "summary": {
+    "n_cases": 20,
+    "weights": {
+      "faithfulness": 0.3,
+      "accuracy": 0.25,
+      "usefulness": 0.3,
+      "tone": 0.15
+    },
+    "gate_cap": 60.0,
+    "rows": [
+      {
+        "case_id": "case_01",
+        "accuracy": 5.0,
+        "usefulness": 1.0,
+        "tone": 4.5,
+        "faithfulness": 5.0,
+        "strict_usefulness": 1.0,
+        "overall": 74.5,
+        "overall_strict": 74.5,
+        "failed": false,
+        "capability_needs": [
+          "logistics_lookup"
+        ],
+        "gap": false
+      },
+      {
+        "case_id": "case_02",
+        "accuracy": 5.0,
+        "usefulness": 2.5,
+        "tone": 4.5,
+        "faithfulness": 5.0,
+        "strict_usefulness": 1.5,
+        "overall": 83.5,
+        "overall_strict": 77.5,
+        "failed": false,
+        "capability_needs": [
+          "product_lookup"
+        ],
+        "gap": true
+      },
+      {
+        "case_id": "case_03",
+        "accuracy": 5.0,
+        "usefulness": 3.5,
+        "tone": 4.0,
+        "faithfulness": 5.0,
+        "strict_usefulness": 2.5,
+        "overall": 88.0,
+        "overall_strict": 82.0,
+        "failed": false,
+        "capability_needs": [
+          "refund_lookup"
+        ],
+        "gap": true
+      },
+      {
+        "case_id": "case_04",
+        "accuracy": 5.0,
+        "usefulness": 3.0,
+        "tone": 4.5,
+        "faithfulness": 5.0,
+        "strict_usefulness": 2.0,
+        "overall": 86.5,
+        "overall_strict": 80.5,
+        "failed": false,
+        "capability_needs": [
+          "product_lookup"
+        ],
+        "gap": true
+      },
+      {
+        "case_id": "case_05",
+        "accuracy": 5.0,
+        "usefulness": 2.0,
+        "tone": 3.5,
+        "faithfulness": 5.0,
+        "strict_usefulness": 2.0,
+        "overall": 77.5,
+        "overall_strict": 77.5,
+        "failed": false,
+        "capability_needs": [],
+        "gap": false
+      },
+      {
+        "case_id": "case_06",
+        "accuracy": 5.0,
+        "usefulness": 2.0,
+        "tone": 2.5,
+        "faithfulness": 5.0,
+        "strict_usefulness": 1.0,
+        "overall": 74.5,
+        "overall_strict": 68.5,
+        "failed": false,
+        "capability_needs": [
+          "coupon_lookup"
+        ],
+        "gap": true
+      },
+      {
+        "case_id": "case_07",
+        "accuracy": 5.0,
+        "usefulness": 2.5,
+        "tone": 4.5,
+        "faithfulness": 5.0,
+        "strict_usefulness": 1.5,
+        "overall": 83.5,
+        "overall_strict": 77.5,
+        "failed": false,
+        "capability_needs": [
+          "account_lookup"
+        ],
+        "gap": true
+      },
+      {
+        "case_id": "case_08",
+        "accuracy": 5.0,
+        "usefulness": 2.0,
+        "tone": 4.5,
+        "faithfulness": 5.0,
+        "strict_usefulness": 1.0,
+        "overall": 80.5,
+        "overall_strict": 74.5,
+        "failed": false,
+        "capability_needs": [
+          "product_lookup"
+        ],
+        "gap": true
+      },
+      {
+        "case_id": "case_09",
+        "accuracy": 5.0,
+        "usefulness": 3.0,
+        "tone": 4.0,
+        "faithfulness": 5.0,
+        "strict_usefulness": 2.0,
+        "overall": 85.0,
+        "overall_strict": 79.0,
+        "failed": false,
+        "capability_needs": [
+          "after_sales_action"
+        ],
+        "gap": true
+      },
+      {
+        "case_id": "case_10",
+        "accuracy": 5.0,
+        "usefulness": 3.5,
+        "tone": 4.5,
+        "faithfulness": 5.0,
+        "strict_usefulness": 2.5,
+        "overall": 89.5,
+        "overall_strict": 83.5,
+        "failed": false,
+        "capability_needs": [
+          "after_sales_action"
+        ],
+        "gap": true
+      },
+      {
+        "case_id": "case_11",
+        "accuracy": 5.0,
+        "usefulness": 2.5,
+        "tone": 4.5,
+        "faithfulness": 5.0,
+        "strict_usefulness": 1.5,
+        "overall": 83.5,
+        "overall_strict": 77.5,
+        "failed": false,
+        "capability_needs": [
+          "after_sales_action"
+        ],
+        "gap": true
+      },
+      {
+        "case_id": "case_12",
+        "accuracy": 5.0,
+        "usefulness": 4.0,
+        "tone": 4.0,
+        "faithfulness": 5.0,
+        "strict_usefulness": 3.0,
+        "overall": 91.0,
+        "overall_strict": 85.0,
+        "failed": false,
+        "capability_needs": [
+          "logistics_lookup"
+        ],
+        "gap": true
+      },
+      {
+        "case_id": "case_13",
+        "accuracy": 5.0,
+        "usefulness": 2.0,
+        "tone": 4.5,
+        "faithfulness": 5.0,
+        "strict_usefulness": 1.0,
+        "overall": 80.5,
+        "overall_strict": 74.5,
+        "failed": false,
+        "capability_needs": [
+          "product_lookup"
+        ],
+        "gap": true
+      },
+      {
+        "case_id": "case_14",
+        "accuracy": 5.0,
+        "usefulness": 4.0,
+        "tone": 4.5,
+        "faithfulness": 5.0,
+        "strict_usefulness": 3.0,
+        "overall": 92.5,
+        "overall_strict": 86.5,
+        "failed": false,
+        "capability_needs": [
+          "video_feature"
+        ],
+        "gap": true
+      },
+      {
+        "case_id": "case_15",
+        "accuracy": 5.0,
+        "usefulness": 2.0,
+        "tone": 4.0,
+        "faithfulness": 5.0,
+        "strict_usefulness": 2.0,
+        "overall": 79.0,
+        "overall_strict": 79.0,
+        "failed": false,
+        "capability_needs": [],
+        "gap": false
+      },
+      {
+        "case_id": "case_16",
+        "accuracy": 5.0,
+        "usefulness": 4.0,
+        "tone": 4.5,
+        "faithfulness": 5.0,
+        "strict_usefulness": 4.0,
+        "overall": 92.5,
+        "overall_strict": 92.5,
+        "failed": false,
+        "capability_needs": [
+          "product_comparison"
+        ],
+        "gap": false
+      },
+      {
+        "case_id": "case_17",
+        "accuracy": 5.0,
+        "usefulness": 3.5,
+        "tone": 4.5,
+        "faithfulness": 5.0,
+        "strict_usefulness": 3.5,
+        "overall": 89.5,
+        "overall_strict": 89.5,
+        "failed": false,
+        "capability_needs": [
+          "logistics_lookup",
+          "after_sales_action"
+        ],
+        "gap": false
+      },
+      {
+        "case_id": "case_18",
+        "accuracy": 5.0,
+        "usefulness": 3.5,
+        "tone": 4.5,
+        "faithfulness": 5.0,
+        "strict_usefulness": 2.5,
+        "overall": 89.5,
+        "overall_strict": 83.5,
+        "failed": false,
+        "capability_needs": [
+          "product_lookup"
+        ],
+        "gap": true
+      },
+      {
+        "case_id": "case_19",
+        "accuracy": 5.0,
+        "usefulness": 2.0,
+        "tone": 4.5,
+        "faithfulness": 5.0,
+        "strict_usefulness": 1.0,
+        "overall": 80.5,
+        "overall_strict": 74.5,
+        "failed": false,
+        "capability_needs": [
+          "product_lookup",
+          "inventory_lookup"
+        ],
+        "gap": true
+      },
+      {
+        "case_id": "case_20",
+        "accuracy": 5.0,
+        "usefulness": 2.0,
+        "tone": 4.5,
+        "faithfulness": 5.0,
+        "strict_usefulness": 1.0,
+        "overall": 80.5,
+        "overall_strict": 74.5,
+        "failed": false,
+        "capability_needs": [
+          "after_sales_action"
+        ],
+        "gap": true
+      }
+    ],
+    "overall_mean": 84.1,
+    "overall_strict_mean": 79.6,
+    "failed_count": 0,
+    "metric_means": {
+      "accuracy": 5.0,
+      "usefulness": 2.73,
+      "tone": 4.25,
+      "faithfulness": 5.0,
+      "strict_usefulness": 1.98
+    },
+    "metric_dists": {
+      "accuracy": {
+        "1.0-1.9": 0,
+        "2.0-2.9": 0,
+        "3.0-3.9": 0,
+        "4.0-4.9": 0,
+        "5.0": 20
+      },
+      "usefulness": {
+        "1.0-1.9": 1,
+        "2.0-2.9": 10,
+        "3.0-3.9": 6,
+        "4.0-4.9": 3,
+        "5.0": 0
+      },
+      "tone": {
+        "1.0-1.9": 0,
+        "2.0-2.9": 1,
+        "3.0-3.9": 1,
+        "4.0-4.9": 18,
+        "5.0": 0
+      },
+      "faithfulness": {
+        "1.0-1.9": 0,
+        "2.0-2.9": 0,
+        "3.0-3.9": 0,
+        "4.0-4.9": 0,
+        "5.0": 20
+      },
+      "strict_usefulness": {
+        "1.0-1.9": 9,
+        "2.0-2.9": 7,
+        "3.0-3.9": 3,
+        "4.0-4.9": 1,
+        "5.0": 0
+      }
+    },
+    "worst3": [
+      {
+        "case_id": "case_01",
+        "accuracy": 5.0,
+        "usefulness": 1.0,
+        "tone": 4.5,
+        "faithfulness": 5.0,
+        "strict_usefulness": 1.0,
+        "overall": 74.5,
+        "overall_strict": 74.5,
+        "failed": false,
+        "capability_needs": [
+          "logistics_lookup"
+        ],
+        "gap": false
+      },
+      {
+        "case_id": "case_06",
+        "accuracy": 5.0,
+        "usefulness": 2.0,
+        "tone": 2.5,
+        "faithfulness": 5.0,
+        "strict_usefulness": 1.0,
+        "overall": 74.5,
+        "overall_strict": 68.5,
+        "failed": false,
+        "capability_needs": [
+          "coupon_lookup"
+        ],
+        "gap": true
+      },
+      {
+        "case_id": "case_05",
+        "accuracy": 5.0,
+        "usefulness": 2.0,
+        "tone": 3.5,
+        "faithfulness": 5.0,
+        "strict_usefulness": 2.0,
+        "overall": 77.5,
+        "overall_strict": 77.5,
+        "failed": false,
+        "capability_needs": [],
+        "gap": false
+      }
+    ],
+    "gap_cases": [
+      {
+        "case_id": "case_02",
+        "accuracy": 5.0,
+        "usefulness": 2.5,
+        "tone": 4.5,
+        "faithfulness": 5.0,
+        "strict_usefulness": 1.5,
+        "overall": 83.5,
+        "overall_strict": 77.5,
+        "failed": false,
+        "capability_needs": [
+          "product_lookup"
+        ],
+        "gap": true
+      },
+      {
+        "case_id": "case_03",
+        "accuracy": 5.0,
+        "usefulness": 3.5,
+        "tone": 4.0,
+        "faithfulness": 5.0,
+        "strict_usefulness": 2.5,
+        "overall": 88.0,
+        "overall_strict": 82.0,
+        "failed": false,
+        "capability_needs": [
+          "refund_lookup"
+        ],
+        "gap": true
+      },
+      {
+        "case_id": "case_04",
+        "accuracy": 5.0,
+        "usefulness": 3.0,
+        "tone": 4.5,
+        "faithfulness": 5.0,
+        "strict_usefulness": 2.0,
+        "overall": 86.5,
+        "overall_strict": 80.5,
+        "failed": false,
+        "capability_needs": [
+          "product_lookup"
+        ],
+        "gap": true
+      },
+      {
+        "case_id": "case_06",
+        "accuracy": 5.0,
+        "usefulness": 2.0,
+        "tone": 2.5,
+        "faithfulness": 5.0,
+        "strict_usefulness": 1.0,
+        "overall": 74.5,
+        "overall_strict": 68.5,
+        "failed": false,
+        "capability_needs": [
+          "coupon_lookup"
+        ],
+        "gap": true
+      },
+      {
+        "case_id": "case_07",
+        "accuracy": 5.0,
+        "usefulness": 2.5,
+        "tone": 4.5,
+        "faithfulness": 5.0,
+        "strict_usefulness": 1.5,
+        "overall": 83.5,
+        "overall_strict": 77.5,
+        "failed": false,
+        "capability_needs": [
+          "account_lookup"
+        ],
+        "gap": true
+      },
+      {
+        "case_id": "case_08",
+        "accuracy": 5.0,
+        "usefulness": 2.0,
+        "tone": 4.5,
+        "faithfulness": 5.0,
+        "strict_usefulness": 1.0,
+        "overall": 80.5,
+        "overall_strict": 74.5,
+        "failed": false,
+        "capability_needs": [
+          "product_lookup"
+        ],
+        "gap": true
+      },
+      {
+        "case_id": "case_09",
+        "accuracy": 5.0,
+        "usefulness": 3.0,
+        "tone": 4.0,
+        "faithfulness": 5.0,
+        "strict_usefulness": 2.0,
+        "overall": 85.0,
+        "overall_strict": 79.0,
+        "failed": false,
+        "capability_needs": [
+          "after_sales_action"
+        ],
+        "gap": true
+      },
+      {
+        "case_id": "case_10",
+        "accuracy": 5.0,
+        "usefulness": 3.5,
+        "tone": 4.5,
+        "faithfulness": 5.0,
+        "strict_usefulness": 2.5,
+        "overall": 89.5,
+        "overall_strict": 83.5,
+        "failed": false,
+        "capability_needs": [
+          "after_sales_action"
+        ],
+        "gap": true
+      },
+      {
+        "case_id": "case_11",
+        "accuracy": 5.0,
+        "usefulness": 2.5,
+        "tone": 4.5,
+        "faithfulness": 5.0,
+        "strict_usefulness": 1.5,
+        "overall": 83.5,
+        "overall_strict": 77.5,
+        "failed": false,
+        "capability_needs": [
+          "after_sales_action"
+        ],
+        "gap": true
+      },
+      {
+        "case_id": "case_12",
+        "accuracy": 5.0,
+        "usefulness": 4.0,
+        "tone": 4.0,
+        "faithfulness": 5.0,
+        "strict_usefulness": 3.0,
+        "overall": 91.0,
+        "overall_strict": 85.0,
+        "failed": false,
+        "capability_needs": [
+          "logistics_lookup"
+        ],
+        "gap": true
+      },
+      {
+        "case_id": "case_13",
+        "accuracy": 5.0,
+        "usefulness": 2.0,
+        "tone": 4.5,
+        "faithfulness": 5.0,
+        "strict_usefulness": 1.0,
+        "overall": 80.5,
+        "overall_strict": 74.5,
+        "failed": false,
+        "capability_needs": [
+          "product_lookup"
+        ],
+        "gap": true
+      },
+      {
+        "case_id": "case_14",
+        "accuracy": 5.0,
+        "usefulness": 4.0,
+        "tone": 4.5,
+        "faithfulness": 5.0,
+        "strict_usefulness": 3.0,
+        "overall": 92.5,
+        "overall_strict": 86.5,
+        "failed": false,
+        "capability_needs": [
+          "video_feature"
+        ],
+        "gap": true
+      },
+      {
+        "case_id": "case_18",
+        "accuracy": 5.0,
+        "usefulness": 3.5,
+        "tone": 4.5,
+        "faithfulness": 5.0,
+        "strict_usefulness": 2.5,
+        "overall": 89.5,
+        "overall_strict": 83.5,
+        "failed": false,
+        "capability_needs": [
+          "product_lookup"
+        ],
+        "gap": true
+      },
+      {
+        "case_id": "case_19",
+        "accuracy": 5.0,
+        "usefulness": 2.0,
+        "tone": 4.5,
+        "faithfulness": 5.0,
+        "strict_usefulness": 1.0,
+        "overall": 80.5,
+        "overall_strict": 74.5,
+        "failed": false,
+        "capability_needs": [
+          "product_lookup",
+          "inventory_lookup"
+        ],
+        "gap": true
+      },
+      {
+        "case_id": "case_20",
+        "accuracy": 5.0,
+        "usefulness": 2.0,
+        "tone": 4.5,
+        "faithfulness": 5.0,
+        "strict_usefulness": 1.0,
+        "overall": 80.5,
+        "overall_strict": 74.5,
+        "failed": false,
+        "capability_needs": [
+          "after_sales_action"
+        ],
+        "gap": true
+      }
+    ],
+    "capability_counts": {
+      "logistics_lookup": 3,
+      "product_lookup": 6,
+      "refund_lookup": 1,
+      "coupon_lookup": 1,
+      "account_lookup": 1,
+      "after_sales_action": 5,
+      "video_feature": 1,
+      "product_comparison": 1,
+      "inventory_lookup": 1
+    }
+  },
+  "results": [
+    {
+      "case_id": "case_01",
+      "source": "mock-rules-v1",
+      "metrics": {
+        "accuracy": {
+          "score": 5.0,
+          "evidence": "您好，如果快递放错了快递柜，您可以尝试联系快递员重新派送，或者到放错的快递柜去取。建议您…",
+          "reason": "未发现与最小知识库冲突的事实断言（规则层只覆盖少量高风险口径）。"
+        },
+        "usefulness": {
+          "score": 1.0,
+          "evidence": "…位置。如果无法解决，请联系我们的客服，我们会协助您处理。",
+          "reason": "基线 3.0（信息型回答）；个案问题未主动承接、导向自助 -1.0；用户有困难/情绪但回复既未追问、也未给直接方案 -1.5",
+          "sub": {
+            "specificity": 2.0,
+            "actionability": 2.0,
+            "completeness": 3.0
+          }
+        },
+        "tone": {
+          "score": 4.5,
+          "evidence": "您好，如果快递放错了快递柜，您可以尝试联系快递员重新派送，或者到放错的快",
+          "reason": "礼貌开场 +0.5"
+        },
+        "faithfulness": {
+          "score": 5.0,
+          "evidence": "（无数值/政策断言）",
+          "reason": "未包含具体数值/政策断言，未发现编造迹象（规则层无法覆盖全部编造情形）。",
+          "fabrication": false,
+          "unsupported_claims": []
+        }
+      },
+      "strict_usefulness": 1.0,
+      "strict_note": "严格口径：假设系统具备全部查询/代办能力，未执行本可执行的动作要扣分。",
+      "capability_needs": [
+        "logistics_lookup"
+      ],
+      "gap_reason": "要让该问题完全闭环，需要系统能力：查询物流轨迹",
+      "features": {
+        "complaint": false,
+        "complaint_words": [],
+        "fault_report": false,
+        "fault_words": [],
+        "difficulty": true,
+        "difficulty_words": [
+          "取不出"
+        ],
+        "feedback": false,
+        "case_specific": true,
+        "multi_intent": false,
+        "apology": false,
+        "apology_word": "",
+        "polite": true,
+        "proactive": false,
+        "proactive_word": "",
+        "self_service": true,
+        "self_service_word": "客服",
+        "asks_info": false,
+        "internal_matter": false,
+        "restate_ask": false,
+        "direct_solution": false,
+        "solution_after_steps": false,
+        "has_steps": false,
+        "numbered_steps": 0,
+        "numeric_claims": [],
+        "kb_violations": [],
+        "capability_hits": [
+          "logistics_lookup"
+        ]
+      }
+    },
+    {
+      "case_id": "case_02",
+      "source": "mock-rules-v1",
+      "metrics": {
+        "accuracy": {
+          "score": 5.0,
+          "evidence": "您好，关于充电宝是否能带上飞机，根据民航局规定，额定能量不超过100Wh的充电宝可以随身…",
+          "reason": "未发现与最小知识库冲突的事实断言（规则层只覆盖少量高风险口径）。"
+        },
+        "usefulness": {
+          "score": 2.5,
+          "evidence": "…定容量标识。如有疑问，请咨询具体航空公司。",
+          "reason": "基线 3.0（信息型回答）；给出具体时效/数值 +0.5；个案问题未主动承接、导向自助 -1.0",
+          "sub": {
+            "specificity": 4.0,
+            "actionability": 2.0,
+            "completeness": 3.0
+          }
+        },
+        "tone": {
+          "score": 4.5,
+          "evidence": "您好，关于充电宝是否能带上飞机，根据民航局规定，额定能量不超过100Wh",
+          "reason": "礼貌开场 +0.5"
+        },
+        "faithfulness": {
+          "score": 5.0,
+          "evidence": "100Wh",
+          "reason": "包含具体数值/时效断言（100Wh），规则层未发现冲突。",
+          "fabrication": false,
+          "unsupported_claims": []
+        }
+      },
+      "strict_usefulness": 1.5,
+      "strict_note": "严格口径：假设系统具备全部查询/代办能力，未执行本可执行的动作要扣分。",
+      "capability_needs": [
+        "product_lookup"
+      ],
+      "gap_reason": "要让该问题完全闭环，需要系统能力：查询商品参数/成分/材质",
+      "features": {
+        "complaint": false,
+        "complaint_words": [],
+        "fault_report": false,
+        "fault_words": [],
+        "difficulty": false,
+        "difficulty_words": [],
+        "feedback": false,
+        "case_specific": true,
+        "multi_intent": false,
+        "apology": false,
+        "apology_word": "",
+        "polite": true,
+        "proactive": false,
+        "proactive_word": "",
+        "self_service": true,
+        "self_service_word": "航空公司",
+        "asks_info": false,
+        "internal_matter": false,
+        "restate_ask": false,
+        "direct_solution": false,
+        "solution_after_steps": false,
+        "has_steps": false,
+        "numbered_steps": 0,
+        "numeric_claims": [
+          "100Wh"
+        ],
+        "kb_violations": [],
+        "capability_hits": [
+          "product_lookup"
+        ]
+      }
+    },
+    {
+      "case_id": "case_03",
+      "source": "mock-rules-v1",
+      "metrics": {
+        "accuracy": {
+          "score": 5.0,
+          "evidence": "退款到账时间取决于退款方式和银行处理速度。一般情况下：原路退回（支付宝/微信）1-3个工…",
+          "reason": "未发现与最小知识库冲突的事实断言（规则层只覆盖少量高风险口径）。"
+        },
+        "usefulness": {
+          "score": 3.5,
+          "evidence": "…款5-15个工作日。您可以在订单详情页查看退款进度。如果超时未到账，请…",
+          "reason": "基线 3.0（信息型回答）；给出具体时效/数值 +0.5",
+          "sub": {
+            "specificity": 4.0,
+            "actionability": 2.0,
+            "completeness": 3.0
+          }
+        },
+        "tone": {
+          "score": 4.0,
+          "evidence": "退款到账时间取决于退款方式和银行处理速度。一般情况下：原路退回（支付宝/",
+          "reason": "中性场景，语气无明显问题。"
+        },
+        "faithfulness": {
+          "score": 5.0,
+          "evidence": "15个工作日、3个工作日、7个工作日",
+          "reason": "包含具体数值/时效断言（15个工作日、3个工作日、7个工作日），规则层未发现冲突。",
+          "fabrication": false,
+          "unsupported_claims": []
+        }
+      },
+      "strict_usefulness": 2.5,
+      "strict_note": "严格口径：假设系统具备全部查询/代办能力，未执行本可执行的动作要扣分。",
+      "capability_needs": [
+        "refund_lookup"
+      ],
+      "gap_reason": "要让该问题完全闭环，需要系统能力：查询退款进度",
+      "features": {
+        "complaint": false,
+        "complaint_words": [],
+        "fault_report": false,
+        "fault_words": [],
+        "difficulty": false,
+        "difficulty_words": [],
+        "feedback": false,
+        "case_specific": false,
+        "multi_intent": false,
+        "apology": false,
+        "apology_word": "",
+        "polite": false,
+        "proactive": false,
+        "proactive_word": "",
+        "self_service": true,
+        "self_service_word": "详情页",
+        "asks_info": false,
+        "internal_matter": false,
+        "restate_ask": false,
+        "direct_solution": true,
+        "solution_after_steps": false,
+        "has_steps": false,
+        "numbered_steps": 0,
+        "numeric_claims": [
+          "15个工作日",
+          "3个工作日",
+          "7个工作日"
+        ],
+        "kb_violations": [],
+        "capability_hits": [
+          "refund_lookup"
+        ]
+      }
+    },
+    {
+      "case_id": "case_04",
+      "source": "mock-rules-v1",
+      "metrics": {
+        "accuracy": {
+          "score": 5.0,
+          "evidence": "抱歉给您带来不便。蓝牙耳机出现单侧无声的情况，建议您尝试以下操作：1.将耳机放回充电盒重…",
+          "reason": "未发现与最小知识库冲突的事实断言（规则层只覆盖少量高风险口径）。"
+        },
+        "usefulness": {
+          "score": 3.0,
+          "evidence": "抱歉给您带来不便。蓝牙耳机出现单侧无声的情况，建议您尝试以下操作：1.将耳机放回…",
+          "reason": "基线 3.0（信息型回答）；分步操作 +0.5；给出具体时效/数值 +0.5；先让用户自查、解决方案后置 -1.0",
+          "sub": {
+            "specificity": 4.0,
+            "actionability": 3.0,
+            "completeness": 3.0
+          }
+        },
+        "tone": {
+          "score": 4.5,
+          "evidence": "抱歉给您带来不便。蓝牙耳机出现单侧无…",
+          "reason": "有道歉 +0.5"
+        },
+        "faithfulness": {
+          "score": 5.0,
+          "evidence": "7天",
+          "reason": "包含具体数值/时效断言（7天），规则层未发现冲突。",
+          "fabrication": false,
+          "unsupported_claims": []
+        }
+      },
+      "strict_usefulness": 2.0,
+      "strict_note": "严格口径：假设系统具备全部查询/代办能力，未执行本可执行的动作要扣分。",
+      "capability_needs": [
+        "product_lookup"
+      ],
+      "gap_reason": "要让该问题完全闭环，需要系统能力：查询商品参数/成分/材质",
+      "features": {
+        "complaint": false,
+        "complaint_words": [],
+        "fault_report": true,
+        "fault_words": [
+          "没声音"
+        ],
+        "difficulty": false,
+        "difficulty_words": [],
+        "feedback": false,
+        "case_specific": true,
+        "multi_intent": false,
+        "apology": true,
+        "apology_word": "抱歉",
+        "polite": true,
+        "proactive": false,
+        "proactive_word": "",
+        "self_service": false,
+        "self_service_word": "",
+        "asks_info": false,
+        "internal_matter": false,
+        "restate_ask": false,
+        "direct_solution": true,
+        "solution_after_steps": true,
+        "has_steps": true,
+        "numbered_steps": 3,
+        "numeric_claims": [
+          "7天"
+        ],
+        "kb_violations": [],
+        "capability_hits": [
+          "product_lookup"
+        ]
+      }
+    },
+    {
+      "case_id": "case_05",
+      "source": "mock-rules-v1",
+      "metrics": {
+        "accuracy": {
+          "score": 5.0,
+          "evidence": "非常抱歉让您久等了，给您带来了不好的体验。我们非常重视每一位客户的感受。请问您遇到了什么…",
+          "reason": "未发现与最小知识库冲突的事实断言（规则层只覆盖少量高风险口径）。"
+        },
+        "usefulness": {
+          "score": 2.0,
+          "evidence": "…的感受。请问您遇到了什么问题？我现在就帮您处理。同时我们会加强客服团队的…",
+          "reason": "基线 3.0（信息型回答）；主动承接 +1.0；追问关键信息 +0.5；同时给出自助路径 -0.5；对情绪用户讲内部事项 -1.0；让已表达不满的用户复述问题 -1.0",
+          "sub": {
+            "specificity": 4.0,
+            "actionability": 4.0,
+            "completeness": 4.0
+          }
+        },
+        "tone": {
+          "score": 3.5,
+          "evidence": "非常抱歉让您久等了，给您带来了不好的体验…",
+          "reason": "有道歉 +0.5；讲内部事项 -0.5；让情绪用户复述 -0.5"
+        },
+        "faithfulness": {
+          "score": 5.0,
+          "evidence": "（无数值/政策断言）",
+          "reason": "未包含具体数值/政策断言，未发现编造迹象（规则层无法覆盖全部编造情形）。",
+          "fabrication": false,
+          "unsupported_claims": []
+        }
+      },
+      "strict_usefulness": 2.0,
+      "strict_note": "严格口径：与能力边界口径一致。",
+      "capability_needs": [],
+      "gap_reason": "",
+      "features": {
+        "complaint": true,
+        "complaint_words": [
+          "太差",
+          "没人理",
+          "等了",
+          "态度"
+        ],
+        "fault_report": false,
+        "fault_words": [],
+        "difficulty": false,
+        "difficulty_words": [],
+        "feedback": false,
+        "case_specific": true,
+        "multi_intent": false,
+        "apology": true,
+        "apology_word": "抱歉",
+        "polite": true,
+        "proactive": true,
+        "proactive_word": "现在就帮",
+        "self_service": true,
+        "self_service_word": "客服",
+        "asks_info": true,
+        "internal_matter": true,
+        "restate_ask": true,
+        "direct_solution": false,
+        "solution_after_steps": false,
+        "has_steps": false,
+        "numbered_steps": 0,
+        "numeric_claims": [],
+        "kb_violations": [],
+        "capability_hits": []
+      }
+    },
+    {
+      "case_id": "case_06",
+      "source": "mock-rules-v1",
+      "metrics": {
+        "accuracy": {
+          "score": 5.0,
+          "evidence": "您好，优惠券无法使用可能有以下原因：1.未达到使用门槛金额 2.商品不在优惠券适用范围内…",
+          "reason": "未发现与最小知识库冲突的事实断言（规则层只覆盖少量高风险口径）。"
+        },
+        "usefulness": {
+          "score": 2.0,
+          "evidence": "…认符合使用条件仍无法使用，请联系客服核实。",
+          "reason": "基线 3.0（信息型回答）；分步操作 +0.5；用户有困难/情绪但回复既未追问、也未给直接方案 -1.5",
+          "sub": {
+            "specificity": 2.0,
+            "actionability": 2.0,
+            "completeness": 3.0
+          }
+        },
+        "tone": {
+          "score": 2.5,
+          "evidence": "您好，优惠券无法使用可能有以下原因：1.未达到使用门槛金额 2.商品不在",
+          "reason": "用户有情绪/故障但无道歉 -1.5"
+        },
+        "faithfulness": {
+          "score": 5.0,
+          "evidence": "（无数值/政策断言）",
+          "reason": "未包含具体数值/政策断言，未发现编造迹象（规则层无法覆盖全部编造情形）。",
+          "fabrication": false,
+          "unsupported_claims": []
+        }
+      },
+      "strict_usefulness": 1.0,
+      "strict_note": "严格口径：假设系统具备全部查询/代办能力，未执行本可执行的动作要扣分。",
+      "capability_needs": [
+        "coupon_lookup"
+      ],
+      "gap_reason": "要让该问题完全闭环，需要系统能力：查询优惠券可用状态",
+      "features": {
+        "complaint": false,
+        "complaint_words": [],
+        "fault_report": true,
+        "fault_words": [
+          "用不了"
+        ],
+        "difficulty": true,
+        "difficulty_words": [
+          "用不了"
+        ],
+        "feedback": false,
+        "case_specific": false,
+        "multi_intent": false,
+        "apology": false,
+        "apology_word": "",
+        "polite": true,
+        "proactive": false,
+        "proactive_word": "",
+        "self_service": true,
+        "self_service_word": "客服",
+        "asks_info": false,
+        "internal_matter": false,
+        "restate_ask": false,
+        "direct_solution": false,
+        "solution_after_steps": false,
+        "has_steps": true,
+        "numbered_steps": 4,
+        "numeric_claims": [],
+        "kb_violations": [],
+        "capability_hits": [
+          "coupon_lookup"
+        ]
+      }
+    },
+    {
+      "case_id": "case_07",
+      "source": "mock-rules-v1",
+      "metrics": {
+        "accuracy": {
+          "score": 5.0,
+          "evidence": "您好，异地登录提醒可能是真实的也可能是诈骗短信。请您先不要点击短信中的任何链接。建议您：…",
+          "reason": "未发现与最小知识库冲突的事实断言（规则层只覆盖少量高风险口径）。"
+        },
+        "usefulness": {
+          "score": 2.5,
+          "evidence": "…。建议您：1.直接登录我们的官方网站或APP查看登录记录 2.修改密…",
+          "reason": "基线 3.0（信息型回答）；分步操作 +0.5；个案问题未主动承接、导向自助 -1.0",
+          "sub": {
+            "specificity": 2.0,
+            "actionability": 2.0,
+            "completeness": 3.0
+          }
+        },
+        "tone": {
+          "score": 4.5,
+          "evidence": "您好，异地登录提醒可能是真实的也可能是诈骗短信。请您先不要点击短信中的任",
+          "reason": "礼貌开场 +0.5"
+        },
+        "faithfulness": {
+          "score": 5.0,
+          "evidence": "（无数值/政策断言）",
+          "reason": "未包含具体数值/政策断言，未发现编造迹象（规则层无法覆盖全部编造情形）。",
+          "fabrication": false,
+          "unsupported_claims": []
+        }
+      },
+      "strict_usefulness": 1.5,
+      "strict_note": "严格口径：假设系统具备全部查询/代办能力，未执行本可执行的动作要扣分。",
+      "capability_needs": [
+        "account_lookup"
+      ],
+      "gap_reason": "要让该问题完全闭环，需要系统能力：查询账号登录记录",
+      "features": {
+        "complaint": false,
+        "complaint_words": [],
+        "fault_report": false,
+        "fault_words": [],
+        "difficulty": false,
+        "difficulty_words": [],
+        "feedback": false,
+        "case_specific": true,
+        "multi_intent": false,
+        "apology": false,
+        "apology_word": "",
+        "polite": true,
+        "proactive": false,
+        "proactive_word": "",
+        "self_service": true,
+        "self_service_word": "网站",
+        "asks_info": false,
+        "internal_matter": false,
+        "restate_ask": false,
+        "direct_solution": false,
+        "solution_after_steps": false,
+        "has_steps": true,
+        "numbered_steps": 3,
+        "numeric_claims": [],
+        "kb_violations": [],
+        "capability_hits": [
+          "account_lookup"
+        ]
+      }
+    },
+    {
+      "case_id": "case_08",
+      "source": "mock-rules-v1",
+      "metrics": {
+        "accuracy": {
+          "score": 5.0,
+          "evidence": "您好，这款手机壳采用的是TPU软胶材质，具有较好的防摔性能和手感。如果您需要更具体的材质…",
+          "reason": "未发现与最小知识库冲突的事实断言（规则层只覆盖少量高风险口径）。"
+        },
+        "usefulness": {
+          "score": 2.0,
+          "evidence": "…要更具体的材质信息，可以查看商品详情页的参数说明，或联系客服获取。",
+          "reason": "基线 3.0（信息型回答）；个案问题未主动承接、导向自助 -1.0",
+          "sub": {
+            "specificity": 2.0,
+            "actionability": 2.0,
+            "completeness": 3.0
+          }
+        },
+        "tone": {
+          "score": 4.5,
+          "evidence": "您好，这款手机壳采用的是TPU软胶材质，具有较好的防摔性能和手感。如果您",
+          "reason": "礼貌开场 +0.5"
+        },
+        "faithfulness": {
+          "score": 5.0,
+          "evidence": "（无数值/政策断言）",
+          "reason": "未包含具体数值/政策断言，未发现编造迹象（规则层无法覆盖全部编造情形）。",
+          "fabrication": false,
+          "unsupported_claims": []
+        }
+      },
+      "strict_usefulness": 1.0,
+      "strict_note": "严格口径：假设系统具备全部查询/代办能力，未执行本可执行的动作要扣分。",
+      "capability_needs": [
+        "product_lookup"
+      ],
+      "gap_reason": "要让该问题完全闭环，需要系统能力：查询商品参数/成分/材质",
+      "features": {
+        "complaint": false,
+        "complaint_words": [],
+        "fault_report": false,
+        "fault_words": [],
+        "difficulty": false,
+        "difficulty_words": [],
+        "feedback": false,
+        "case_specific": true,
+        "multi_intent": false,
+        "apology": false,
+        "apology_word": "",
+        "polite": true,
+        "proactive": false,
+        "proactive_word": "",
+        "self_service": true,
+        "self_service_word": "详情页",
+        "asks_info": false,
+        "internal_matter": false,
+        "restate_ask": false,
+        "direct_solution": false,
+        "solution_after_steps": false,
+        "has_steps": false,
+        "numbered_steps": 0,
+        "numeric_claims": [],
+        "kb_violations": [],
+        "capability_hits": [
+          "product_lookup"
+        ]
+      }
+    },
+    {
+      "case_id": "case_09",
+      "source": "mock-rules-v1",
+      "metrics": {
+        "accuracy": {
+          "score": 5.0,
+          "evidence": "退货运费承担规则如下：质量问题导致的退货，运费由商家承担；非质量问题（如不喜欢、买错了等…",
+          "reason": "未发现与最小知识库冲突的事实断言（规则层只覆盖少量高风险口径）。"
+        },
+        "usefulness": {
+          "score": 3.0,
+          "evidence": "…我们的退换货政策。如有疑问请联系客服。",
+          "reason": "基线 3.0（信息型回答）",
+          "sub": {
+            "specificity": 2.0,
+            "actionability": 2.0,
+            "completeness": 3.0
+          }
+        },
+        "tone": {
+          "score": 4.0,
+          "evidence": "退货运费承担规则如下：质量问题导致的退货，运费由商家承担；非质量问题（如",
+          "reason": "中性场景，语气无明显问题。"
+        },
+        "faithfulness": {
+          "score": 5.0,
+          "evidence": "（无数值/政策断言）",
+          "reason": "未包含具体数值/政策断言，未发现编造迹象（规则层无法覆盖全部编造情形）。",
+          "fabrication": false,
+          "unsupported_claims": []
+        }
+      },
+      "strict_usefulness": 2.0,
+      "strict_note": "严格口径：假设系统具备全部查询/代办能力，未执行本可执行的动作要扣分。",
+      "capability_needs": [
+        "after_sales_action"
+      ],
+      "gap_reason": "要让该问题完全闭环，需要系统能力：代用户执行退换/取消等操作",
+      "features": {
+        "complaint": false,
+        "complaint_words": [],
+        "fault_report": false,
+        "fault_words": [],
+        "difficulty": false,
+        "difficulty_words": [],
+        "feedback": false,
+        "case_specific": false,
+        "multi_intent": false,
+        "apology": false,
+        "apology_word": "",
+        "polite": false,
+        "proactive": false,
+        "proactive_word": "",
+        "self_service": true,
+        "self_service_word": "客服",
+        "asks_info": false,
+        "internal_matter": false,
+        "restate_ask": false,
+        "direct_solution": true,
+        "solution_after_steps": false,
+        "has_steps": false,
+        "numbered_steps": 0,
+        "numeric_claims": [],
+        "kb_violations": [],
+        "capability_hits": [
+          "after_sales_action"
+        ]
+      }
+    },
+    {
+      "case_id": "case_10",
+      "source": "mock-rules-v1",
+      "metrics": {
+        "accuracy": {
+          "score": 5.0,
+          "evidence": "您好，订单未发货前可以申请取消。请您在订单详情页操作，或联系客服协助处理。取消后款项会在…",
+          "reason": "未发现与最小知识库冲突的事实断言（规则层只覆盖少量高风险口径）。"
+        },
+        "usefulness": {
+          "score": 3.5,
+          "evidence": "…未发货前可以申请取消。请您在订单详情页操作，或联系客服协助处理。取消后…",
+          "reason": "基线 3.0（信息型回答）；给出具体时效/数值 +0.5",
+          "sub": {
+            "specificity": 4.0,
+            "actionability": 2.0,
+            "completeness": 3.0
+          }
+        },
+        "tone": {
+          "score": 4.5,
+          "evidence": "您好，订单未发货前可以申请取消。请您在订单详情页操作，或联系客服协助处理",
+          "reason": "礼貌开场 +0.5"
+        },
+        "faithfulness": {
+          "score": 5.0,
+          "evidence": "3个工作日",
+          "reason": "包含具体数值/时效断言（3个工作日），规则层未发现冲突。",
+          "fabrication": false,
+          "unsupported_claims": []
+        }
+      },
+      "strict_usefulness": 2.5,
+      "strict_note": "严格口径：假设系统具备全部查询/代办能力，未执行本可执行的动作要扣分。",
+      "capability_needs": [
+        "after_sales_action"
+      ],
+      "gap_reason": "要让该问题完全闭环，需要系统能力：代用户执行退换/取消等操作",
+      "features": {
+        "complaint": false,
+        "complaint_words": [],
+        "fault_report": false,
+        "fault_words": [],
+        "difficulty": false,
+        "difficulty_words": [],
+        "feedback": false,
+        "case_specific": false,
+        "multi_intent": false,
+        "apology": false,
+        "apology_word": "",
+        "polite": true,
+        "proactive": false,
+        "proactive_word": "",
+        "self_service": true,
+        "self_service_word": "详情页",
+        "asks_info": false,
+        "internal_matter": false,
+        "restate_ask": false,
+        "direct_solution": true,
+        "solution_after_steps": false,
+        "has_steps": false,
+        "numbered_steps": 0,
+        "numeric_claims": [
+          "3个工作日"
+        ],
+        "kb_violations": [],
+        "capability_hits": [
+          "after_sales_action"
+        ]
+      }
+    },
+    {
+      "case_id": "case_11",
+      "source": "mock-rules-v1",
+      "metrics": {
+        "accuracy": {
+          "score": 5.0,
+          "evidence": "您好，换货需要先退货再重新下单选择正确尺码。请分别发起两件商品的换货申请，按照退货地址寄…",
+          "reason": "未发现与最小知识库冲突的事实断言（规则层只覆盖少量高风险口径）。"
+        },
+        "usefulness": {
+          "score": 2.5,
+          "evidence": "您好，换货需要先退货再重新下单选择正确尺码。请分别发起两件商品的换货申请，按照退…",
+          "reason": "基线 3.0（信息型回答）；多问题未逐项覆盖 -0.5",
+          "sub": {
+            "specificity": 3.0,
+            "actionability": 3.0,
+            "completeness": 2.0
+          }
+        },
+        "tone": {
+          "score": 4.5,
+          "evidence": "您好，换货需要先退货再重新下单选择正确尺码。请分别发起两件商品的换货申请",
+          "reason": "礼貌开场 +0.5"
+        },
+        "faithfulness": {
+          "score": 5.0,
+          "evidence": "（无数值/政策断言）",
+          "reason": "未包含具体数值/政策断言，未发现编造迹象（规则层无法覆盖全部编造情形）。",
+          "fabrication": false,
+          "unsupported_claims": []
+        }
+      },
+      "strict_usefulness": 1.5,
+      "strict_note": "严格口径：假设系统具备全部查询/代办能力，未执行本可执行的动作要扣分。",
+      "capability_needs": [
+        "after_sales_action"
+      ],
+      "gap_reason": "要让该问题完全闭环，需要系统能力：代用户执行退换/取消等操作",
+      "features": {
+        "complaint": false,
+        "complaint_words": [],
+        "fault_report": false,
+        "fault_words": [],
+        "difficulty": false,
+        "difficulty_words": [],
+        "feedback": false,
+        "case_specific": true,
+        "multi_intent": true,
+        "apology": false,
+        "apology_word": "",
+        "polite": true,
+        "proactive": false,
+        "proactive_word": "",
+        "self_service": false,
+        "self_service_word": "",
+        "asks_info": false,
+        "internal_matter": false,
+        "restate_ask": false,
+        "direct_solution": true,
+        "solution_after_steps": false,
+        "has_steps": false,
+        "numbered_steps": 0,
+        "numeric_claims": [],
+        "kb_violations": [],
+        "capability_hits": [
+          "after_sales_action"
+        ]
+      }
+    },
+    {
+      "case_id": "case_12",
+      "source": "mock-rules-v1",
+      "metrics": {
+        "accuracy": {
+          "score": 5.0,
+          "evidence": "物流信息长时间未更新可能是以下原因：1.包裹正在中转途中 2.快递公司信息更新延迟 3.…",
+          "reason": "未发现与最小知识库冲突的事实断言（规则层只覆盖少量高风险口径）。"
+        },
+        "usefulness": {
+          "score": 4.0,
+          "evidence": "…原因：1.包裹正在中转途中 2.快递公司信息更新延迟 3.包裹可能出现问…",
+          "reason": "基线 3.0（信息型回答）；分步操作 +0.5；给出具体时效/数值 +0.5",
+          "sub": {
+            "specificity": 4.0,
+            "actionability": 2.0,
+            "completeness": 3.0
+          }
+        },
+        "tone": {
+          "score": 4.0,
+          "evidence": "物流信息长时间未更新可能是以下原因：1.包裹正在中转途中 2.快递公司信",
+          "reason": "中性场景，语气无明显问题。"
+        },
+        "faithfulness": {
+          "score": 5.0,
+          "evidence": "2天",
+          "reason": "包含具体数值/时效断言（2天），规则层未发现冲突。",
+          "fabrication": false,
+          "unsupported_claims": []
+        }
+      },
+      "strict_usefulness": 3.0,
+      "strict_note": "严格口径：假设系统具备全部查询/代办能力，未执行本可执行的动作要扣分。",
+      "capability_needs": [
+        "logistics_lookup"
+      ],
+      "gap_reason": "要让该问题完全闭环，需要系统能力：查询物流轨迹",
+      "features": {
+        "complaint": false,
+        "complaint_words": [],
+        "fault_report": false,
+        "fault_words": [],
+        "difficulty": false,
+        "difficulty_words": [],
+        "feedback": false,
+        "case_specific": false,
+        "multi_intent": false,
+        "apology": false,
+        "apology_word": "",
+        "polite": false,
+        "proactive": false,
+        "proactive_word": "",
+        "self_service": true,
+        "self_service_word": "快递公司",
+        "asks_info": false,
+        "internal_matter": false,
+        "restate_ask": false,
+        "direct_solution": false,
+        "solution_after_steps": false,
+        "has_steps": true,
+        "numbered_steps": 3,
+        "numeric_claims": [
+          "2天"
+        ],
+        "kb_violations": [],
+        "capability_hits": [
+          "logistics_lookup"
+        ]
+      }
+    },
+    {
+      "case_id": "case_13",
+      "source": "mock-rules-v1",
+      "metrics": {
+        "accuracy": {
+          "score": 5.0,
+          "evidence": "您好，面膜的成分表可以在商品详情页查看。如果您对特定成分过敏，建议您在购买前仔细核对成分…",
+          "reason": "未发现与最小知识库冲突的事实断言（规则层只覆盖少量高风险口径）。"
+        },
+        "usefulness": {
+          "score": 2.0,
+          "evidence": "您好，面膜的成分表可以在商品详情页查看。如果您对特定成分过敏，建议…",
+          "reason": "基线 3.0（信息型回答）；个案问题未主动承接、导向自助 -1.0",
+          "sub": {
+            "specificity": 2.0,
+            "actionability": 2.0,
+            "completeness": 3.0
+          }
+        },
+        "tone": {
+          "score": 4.5,
+          "evidence": "您好，面膜的成分表可以在商品详情页查看。如果您对特定成分过敏，建议您在购",
+          "reason": "礼貌开场 +0.5"
+        },
+        "faithfulness": {
+          "score": 5.0,
+          "evidence": "（无数值/政策断言）",
+          "reason": "未包含具体数值/政策断言，未发现编造迹象（规则层无法覆盖全部编造情形）。",
+          "fabrication": false,
+          "unsupported_claims": []
+        }
+      },
+      "strict_usefulness": 1.0,
+      "strict_note": "严格口径：假设系统具备全部查询/代办能力，未执行本可执行的动作要扣分。",
+      "capability_needs": [
+        "product_lookup"
+      ],
+      "gap_reason": "要让该问题完全闭环，需要系统能力：查询商品参数/成分/材质",
+      "features": {
+        "complaint": false,
+        "complaint_words": [],
+        "fault_report": false,
+        "fault_words": [],
+        "difficulty": false,
+        "difficulty_words": [],
+        "feedback": false,
+        "case_specific": true,
+        "multi_intent": false,
+        "apology": false,
+        "apology_word": "",
+        "polite": true,
+        "proactive": false,
+        "proactive_word": "",
+        "self_service": true,
+        "self_service_word": "详情页",
+        "asks_info": false,
+        "internal_matter": false,
+        "restate_ask": false,
+        "direct_solution": false,
+        "solution_after_steps": false,
+        "has_steps": false,
+        "numbered_steps": 0,
+        "numeric_claims": [],
+        "kb_violations": [],
+        "capability_hits": [
+          "product_lookup"
+        ]
+      }
+    },
+    {
+      "case_id": "case_14",
+      "source": "mock-rules-v1",
+      "metrics": {
+        "accuracy": {
+          "score": 5.0,
+          "evidence": "感谢您的宝贵建议！我们会将您的反馈转达给产品团队。目前部分商品已支持视频展示，您可以在商…",
+          "reason": "未发现与最小知识库冲突的事实断言（规则层只覆盖少量高风险口径）。"
+        },
+        "usefulness": {
+          "score": 4.0,
+          "evidence": "…商品已支持视频展示，您可以在商品详情页查看是否有视频标识。如果您有特定…",
+          "reason": "建议类反馈：按“感谢+承诺转达”处理",
+          "sub": {
+            "specificity": 2.0,
+            "actionability": 2.0,
+            "completeness": 3.0
+          }
+        },
+        "tone": {
+          "score": 4.5,
+          "evidence": "感谢您的宝贵建议！我们会将您的反馈转达给产品团队。目前部分商品已支持视频",
+          "reason": "礼貌开场 +0.5"
+        },
+        "faithfulness": {
+          "score": 5.0,
+          "evidence": "（无数值/政策断言）",
+          "reason": "未包含具体数值/政策断言，未发现编造迹象（规则层无法覆盖全部编造情形）。",
+          "fabrication": false,
+          "unsupported_claims": []
+        }
+      },
+      "strict_usefulness": 3.0,
+      "strict_note": "严格口径：假设系统具备全部查询/代办能力，未执行本可执行的动作要扣分。",
+      "capability_needs": [
+        "video_feature"
+      ],
+      "gap_reason": "要让该问题完全闭环，需要系统能力：提供商品实物视频",
+      "features": {
+        "complaint": false,
+        "complaint_words": [],
+        "fault_report": false,
+        "fault_words": [],
+        "difficulty": false,
+        "difficulty_words": [],
+        "feedback": true,
+        "case_specific": false,
+        "multi_intent": false,
+        "apology": false,
+        "apology_word": "",
+        "polite": true,
+        "proactive": false,
+        "proactive_word": "",
+        "self_service": true,
+        "self_service_word": "详情页",
+        "asks_info": false,
+        "internal_matter": true,
+        "restate_ask": false,
+        "direct_solution": false,
+        "solution_after_steps": false,
+        "has_steps": false,
+        "numbered_steps": 0,
+        "numeric_claims": [],
+        "kb_violations": [],
+        "capability_hits": [
+          "video_feature"
+        ]
+      }
+    },
+    {
+      "case_id": "case_15",
+      "source": "mock-rules-v1",
+      "metrics": {
+        "accuracy": {
+          "score": 5.0,
+          "evidence": "非常抱歉连续给您带来不好的体验。我们高度重视商品质量问题。请您先申请退货退款，退货运费由…",
+          "reason": "未发现与最小知识库冲突的事实断言（规则层只覆盖少量高风险口径）。"
+        },
+        "usefulness": {
+          "score": 2.0,
+          "evidence": "非常抱歉连续给您带来不好的体验。我们高度重视商品质量问题。请您先申请退货退款，退…",
+          "reason": "基线 3.0（信息型回答）；对情绪用户讲内部事项 -1.0",
+          "sub": {
+            "specificity": 3.0,
+            "actionability": 3.0,
+            "completeness": 3.0
+          }
+        },
+        "tone": {
+          "score": 4.0,
+          "evidence": "非常抱歉连续给您带来不好的体验。我们高度…",
+          "reason": "有道歉 +0.5；讲内部事项 -0.5"
+        },
+        "faithfulness": {
+          "score": 5.0,
+          "evidence": "（无数值/政策断言）",
+          "reason": "未包含具体数值/政策断言，未发现编造迹象（规则层无法覆盖全部编造情形）。",
+          "fabrication": false,
+          "unsupported_claims": []
+        }
+      },
+      "strict_usefulness": 2.0,
+      "strict_note": "严格口径：与能力边界口径一致。",
+      "capability_needs": [],
+      "gap_reason": "",
+      "features": {
+        "complaint": true,
+        "complaint_words": [
+          "又是"
+        ],
+        "fault_report": true,
+        "fault_words": [
+          "坏的"
+        ],
+        "difficulty": false,
+        "difficulty_words": [],
+        "feedback": false,
+        "case_specific": true,
+        "multi_intent": false,
+        "apology": true,
+        "apology_word": "抱歉",
+        "polite": true,
+        "proactive": false,
+        "proactive_word": "",
+        "self_service": false,
+        "self_service_word": "",
+        "asks_info": false,
+        "internal_matter": true,
+        "restate_ask": false,
+        "direct_solution": true,
+        "solution_after_steps": false,
+        "has_steps": false,
+        "numbered_steps": 0,
+        "numeric_claims": [],
+        "kb_violations": [],
+        "capability_hits": []
+      }
+    },
+    {
+      "case_id": "case_16",
+      "source": "mock-rules-v1",
+      "metrics": {
+        "accuracy": {
+          "score": 5.0,
+          "evidence": "您好，不同手机各有优势，适合的需求也不同。如果您能告诉我具体的使用场景和预算，我可以帮您…",
+          "reason": "未发现与最小知识库冲突的事实断言（规则层只覆盖少量高风险口径）。"
+        },
+        "usefulness": {
+          "score": 4.0,
+          "evidence": "…诉我具体的使用场景和预算，我可以帮您推荐更合适的选择。您也可以查看商…",
+          "reason": "基线 3.0（信息型回答）；主动承接 +1.0；追问关键信息 +0.5；同时给出自助路径 -0.5",
+          "sub": {
+            "specificity": 4.0,
+            "actionability": 4.0,
+            "completeness": 4.0
+          }
+        },
+        "tone": {
+          "score": 4.5,
+          "evidence": "您好，不同手机各有优势，适合的需求也不同。如果您能告诉我具体的使用场景和",
+          "reason": "礼貌开场 +0.5"
+        },
+        "faithfulness": {
+          "score": 5.0,
+          "evidence": "（无数值/政策断言）",
+          "reason": "未包含具体数值/政策断言，未发现编造迹象（规则层无法覆盖全部编造情形）。",
+          "fabrication": false,
+          "unsupported_claims": []
+        }
+      },
+      "strict_usefulness": 4.0,
+      "strict_note": "严格口径：与能力边界口径一致。",
+      "capability_needs": [
+        "product_comparison"
+      ],
+      "gap_reason": "要让该问题完全闭环，需要系统能力：按用户需求对比推荐商品",
+      "features": {
+        "complaint": false,
+        "complaint_words": [],
+        "fault_report": false,
+        "fault_words": [],
+        "difficulty": false,
+        "difficulty_words": [],
+        "feedback": false,
+        "case_specific": false,
+        "multi_intent": false,
+        "apology": false,
+        "apology_word": "",
+        "polite": true,
+        "proactive": true,
+        "proactive_word": "帮您",
+        "self_service": true,
+        "self_service_word": "详情页",
+        "asks_info": true,
+        "internal_matter": false,
+        "restate_ask": false,
+        "direct_solution": false,
+        "solution_after_steps": false,
+        "has_steps": false,
+        "numbered_steps": 0,
+        "numeric_claims": [],
+        "kb_violations": [],
+        "capability_hits": [
+          "product_comparison"
+        ]
+      }
+    },
+    {
+      "case_id": "case_17",
+      "source": "mock-rules-v1",
+      "metrics": {
+        "accuracy": {
+          "score": 5.0,
+          "evidence": "您好，关于您的两个问题：1.退货进度请在订单详情页查看 2.快递进度可以在物流追踪页面查…",
+          "reason": "未发现与最小知识库冲突的事实断言（规则层只覆盖少量高风险口径）。"
+        },
+        "usefulness": {
+          "score": 3.5,
+          "evidence": "…如果您能提供具体的订单号，我可以帮您查询更详细的信息。",
+          "reason": "基线 3.0（信息型回答）；承接出现在自助提示之后（只算兜底）+0.5；追问关键信息 +0.5；分步操作 +0.5；先导向自助、承接只是兜底 -1.0",
+          "sub": {
+            "specificity": 4.0,
+            "actionability": 4.0,
+            "completeness": 4.0
+          }
+        },
+        "tone": {
+          "score": 4.5,
+          "evidence": "您好，关于您的两个问题：1.退货进度请在订单详情页查看 2.快递进度可以",
+          "reason": "礼貌开场 +0.5"
+        },
+        "faithfulness": {
+          "score": 5.0,
+          "evidence": "（无数值/政策断言）",
+          "reason": "未包含具体数值/政策断言，未发现编造迹象（规则层无法覆盖全部编造情形）。",
+          "fabrication": false,
+          "unsupported_claims": []
+        }
+      },
+      "strict_usefulness": 3.5,
+      "strict_note": "严格口径：与能力边界口径一致。",
+      "capability_needs": [
+        "logistics_lookup",
+        "after_sales_action"
+      ],
+      "gap_reason": "要让该问题完全闭环，需要系统能力：查询物流轨迹、代用户执行退换/取消等操作",
+      "features": {
+        "complaint": false,
+        "complaint_words": [],
+        "fault_report": false,
+        "fault_words": [],
+        "difficulty": false,
+        "difficulty_words": [],
+        "feedback": false,
+        "case_specific": true,
+        "multi_intent": true,
+        "apology": false,
+        "apology_word": "",
+        "polite": true,
+        "proactive": true,
+        "proactive_word": "帮您",
+        "self_service": true,
+        "self_service_word": "详情页",
+        "asks_info": true,
+        "internal_matter": false,
+        "restate_ask": false,
+        "direct_solution": false,
+        "solution_after_steps": false,
+        "has_steps": true,
+        "numbered_steps": 2,
+        "numeric_claims": [],
+        "kb_violations": [],
+        "capability_hits": [
+          "logistics_lookup",
+          "after_sales_action"
+        ]
+      }
+    },
+    {
+      "case_id": "case_18",
+      "source": "mock-rules-v1",
+      "metrics": {
+        "accuracy": {
+          "score": 5.0,
+          "evidence": "抱歉给您带来不便。扫地机器人使用两周就出现故障，属于质量问题。您的订单在30天质保期内，…",
+          "reason": "未发现与最小知识库冲突的事实断言（规则层只覆盖少量高风险口径）。"
+        },
+        "usefulness": {
+          "score": 3.5,
+          "evidence": "…费由我们承担。如有其他问题请联系客服。",
+          "reason": "基线 3.0（信息型回答）；给出具体时效/数值 +0.5",
+          "sub": {
+            "specificity": 4.0,
+            "actionability": 2.0,
+            "completeness": 3.0
+          }
+        },
+        "tone": {
+          "score": 4.5,
+          "evidence": "抱歉给您带来不便。扫地机器人使用两周…",
+          "reason": "有道歉 +0.5"
+        },
+        "faithfulness": {
+          "score": 5.0,
+          "evidence": "30天",
+          "reason": "包含具体数值/时效断言（30天），规则层未发现冲突。",
+          "fabrication": false,
+          "unsupported_claims": []
+        }
+      },
+      "strict_usefulness": 2.5,
+      "strict_note": "严格口径：假设系统具备全部查询/代办能力，未执行本可执行的动作要扣分。",
+      "capability_needs": [
+        "product_lookup"
+      ],
+      "gap_reason": "要让该问题完全闭环，需要系统能力：查询商品参数/成分/材质",
+      "features": {
+        "complaint": false,
+        "complaint_words": [],
+        "fault_report": true,
+        "fault_words": [
+          "不工作"
+        ],
+        "difficulty": false,
+        "difficulty_words": [],
+        "feedback": false,
+        "case_specific": false,
+        "multi_intent": false,
+        "apology": true,
+        "apology_word": "抱歉",
+        "polite": true,
+        "proactive": false,
+        "proactive_word": "",
+        "self_service": true,
+        "self_service_word": "客服",
+        "asks_info": false,
+        "internal_matter": false,
+        "restate_ask": false,
+        "direct_solution": true,
+        "solution_after_steps": false,
+        "has_steps": false,
+        "numbered_steps": 0,
+        "numeric_claims": [
+          "30天"
+        ],
+        "kb_violations": [],
+        "capability_hits": [
+          "product_lookup"
+        ]
+      }
+    },
+    {
+      "case_id": "case_19",
+      "source": "mock-rules-v1",
+      "metrics": {
+        "accuracy": {
+          "score": 5.0,
+          "evidence": "您好，商品补货时间不固定，建议您关注商品页面或联系客服询问预计到货时间。您也可以将商品加…",
+          "reason": "未发现与最小知识库冲突的事实断言（规则层只覆盖少量高风险口径）。"
+        },
+        "usefulness": {
+          "score": 2.0,
+          "evidence": "您好，商品补货时间不固定，建议您关注商品页面或联系客服询问预计到货时间。…",
+          "reason": "基线 3.0（信息型回答）；个案问题未主动承接、导向自助 -1.0",
+          "sub": {
+            "specificity": 2.0,
+            "actionability": 2.0,
+            "completeness": 3.0
+          }
+        },
+        "tone": {
+          "score": 4.5,
+          "evidence": "您好，商品补货时间不固定，建议您关注商品页面或联系客服询问预计到货时间。",
+          "reason": "礼貌开场 +0.5"
+        },
+        "faithfulness": {
+          "score": 5.0,
+          "evidence": "（无数值/政策断言）",
+          "reason": "未包含具体数值/政策断言，未发现编造迹象（规则层无法覆盖全部编造情形）。",
+          "fabrication": false,
+          "unsupported_claims": []
+        }
+      },
+      "strict_usefulness": 1.0,
+      "strict_note": "严格口径：假设系统具备全部查询/代办能力，未执行本可执行的动作要扣分。",
+      "capability_needs": [
+        "product_lookup",
+        "inventory_lookup"
+      ],
+      "gap_reason": "要让该问题完全闭环，需要系统能力：查询商品参数/成分/材质、查询补货计划/库存",
+      "features": {
+        "complaint": false,
+        "complaint_words": [],
+        "fault_report": false,
+        "fault_words": [],
+        "difficulty": false,
+        "difficulty_words": [],
+        "feedback": false,
+        "case_specific": true,
+        "multi_intent": false,
+        "apology": false,
+        "apology_word": "",
+        "polite": true,
+        "proactive": false,
+        "proactive_word": "",
+        "self_service": true,
+        "self_service_word": "关注商品",
+        "asks_info": false,
+        "internal_matter": false,
+        "restate_ask": false,
+        "direct_solution": false,
+        "solution_after_steps": false,
+        "has_steps": false,
+        "numbered_steps": 0,
+        "numeric_claims": [],
+        "kb_violations": [],
+        "capability_hits": [
+          "product_lookup",
+          "inventory_lookup"
+        ]
+      }
+    },
+    {
+      "case_id": "case_20",
+      "source": "mock-rules-v1",
+      "metrics": {
+        "accuracy": {
+          "score": 5.0,
+          "evidence": "抱歉给您带来困扰。退货流程一般包括：1.在订单页面点击退货 2.选择退货原因 3.提交申…",
+          "reason": "未发现与最小知识库冲突的事实断言（规则层只覆盖少量高风险口径）。"
+        },
+        "usefulness": {
+          "score": 2.0,
+          "evidence": "…来困扰。退货流程一般包括：1.在订单页面点击退货 2.选择退货原因 3…",
+          "reason": "基线 3.0（信息型回答）；分步操作 +0.5；用户有困难/情绪但回复既未追问、也未给直接方案 -1.5",
+          "sub": {
+            "specificity": 2.0,
+            "actionability": 2.0,
+            "completeness": 3.0
+          }
+        },
+        "tone": {
+          "score": 4.5,
+          "evidence": "抱歉给您带来困扰。退货流程一般包括：…",
+          "reason": "有道歉 +0.5"
+        },
+        "faithfulness": {
+          "score": 5.0,
+          "evidence": "（无数值/政策断言）",
+          "reason": "未包含具体数值/政策断言，未发现编造迹象（规则层无法覆盖全部编造情形）。",
+          "fabrication": false,
+          "unsupported_claims": []
+        }
+      },
+      "strict_usefulness": 1.0,
+      "strict_note": "严格口径：假设系统具备全部查询/代办能力，未执行本可执行的动作要扣分。",
+      "capability_needs": [
+        "after_sales_action"
+      ],
+      "gap_reason": "要让该问题完全闭环，需要系统能力：代用户执行退换/取消等操作",
+      "features": {
+        "complaint": true,
+        "complaint_words": [
+          "搞半天",
+          "太复杂",
+          "复杂"
+        ],
+        "fault_report": false,
+        "fault_words": [],
+        "difficulty": true,
+        "difficulty_words": [
+          "怎么操作",
+          "太复杂",
+          "复杂",
+          "搞半天"
+        ],
+        "feedback": false,
+        "case_specific": false,
+        "multi_intent": false,
+        "apology": true,
+        "apology_word": "抱歉",
+        "polite": true,
+        "proactive": false,
+        "proactive_word": "",
+        "self_service": true,
+        "self_service_word": "订单页",
+        "asks_info": false,
+        "internal_matter": false,
+        "restate_ask": false,
+        "direct_solution": false,
+        "solution_after_steps": false,
+        "has_steps": true,
+        "numbered_steps": 4,
+        "numeric_claims": [],
+        "kb_violations": [],
+        "capability_hits": [
+          "after_sales_action"
+        ]
+      }
+    }
+  ],
+  "cases": {
+    "case_01": {
+      "id": "case_01",
+      "user_question": "我的快递到了但是放错快递柜了，取不出来",
+      "auto_reply": "您好，如果快递放错了快递柜，您可以尝试联系快递员重新派送，或者到放错的快递柜去取。建议您先查看取件码确认具体位置。如果无法解决，请联系我们的客服，我们会协助您处理。",
+      "human_reference": "这种情况我帮您联系快递公司重新派送到您附近的快递柜或者送货上门，预计需要1-2天。请您提供一下订单号，我来帮您处理。",
+      "annotator_notes": "用户的核心诉求是取不到快递，需要的是'帮我解决'而非'自己去想办法'。自动回复把责任推给了用户，没有体现主动服务意识。"
+    },
+    "case_02": {
+      "id": "case_02",
+      "user_question": "这个充电宝能带上飞机吗",
+      "auto_reply": "您好，关于充电宝是否能带上飞机，根据民航局规定，额定能量不超过100Wh的充电宝可以随身携带上飞机，但不能托运。建议您查看充电宝的额定容量标识。如有疑问，请咨询具体航空公司。",
+      "human_reference": "这款充电宝额定容量是20000mAh（约74Wh），不超过100Wh的限额，可以随身携带上飞机（不能托运）。您可以放心带上飞机。",
+      "annotator_notes": "用户问的是'这个'充电宝，说明在看某个具体商品。人工回复直接查了商品参数给出了明确答案。自动回复没有查具体商品，只是泛泛讲了规定，需要用户自己去确认。"
+    },
+    "case_03": {
+      "id": "case_03",
+      "user_question": "退款什么时候能到账",
+      "auto_reply": "退款到账时间取决于退款方式和银行处理速度。一般情况下：原路退回（支付宝/微信）1-3个工作日，银行卡退款3-7个工作日，信用卡退款5-15个工作日。您可以在订单详情页查看退款进度。如果超时未到账，请联系客服。",
+      "human_reference": "我帮您查一下退款进度。请问您的订单号是？——如果是原路退回（支付宝/微信）一般1-3个工作日到账。",
+      "annotator_notes": "用户问的是'我的退款'，是个具体问题，需要查具体订单。自动回复给了通用说明但没有帮用户查实际状态。人工回复会先查订单再给具体信息。自动回复的通用信息本身是准确的。"
+    },
+    "case_04": {
+      "id": "case_04",
+      "user_question": "我买的蓝牙耳机左耳没声音了，才买三天",
+      "auto_reply": "抱歉给您带来不便。蓝牙耳机出现单侧无声的情况，建议您尝试以下操作：1.将耳机放回充电盒重新配对 2.检查手机蓝牙设置中是否有单声道选项 3.尝试重启耳机。如果问题仍然存在，由于在7天质保期内，您可以申请退货退款或换新。",
+      "human_reference": "抱歉给您带来不便。我帮您查一下订单——如果还在7天质保期内，可以直接申请退款或换新，退货运费由我们承担。",
+      "annotator_notes": "用户已经明确说了才买三天（在质保期内）。自动回复虽然提到了质保期，但先给了一堆排查步骤让用户自己试，没有直接给出解决方案，增加了用户的操作负担。"
+    },
+    "case_05": {
+      "id": "case_05",
+      "user_question": "你们客服态度太差了等了20分钟都没人理我",
+      "auto_reply": "非常抱歉让您久等了，给您带来了不好的体验。我们非常重视每一位客户的感受。请问您遇到了什么问题？我现在就帮您处理。同时我们会加强客服团队的培训，避免类似情况再次发生。",
+      "human_reference": "非常抱歉让您久等了。请您把之前想咨询的问题告诉我，我直接帮您处理，不用再等了。",
+      "annotator_notes": "用户已经在生气等太久了。自动回复虽然道歉了，但没有立刻帮用户解决原始问题，而是说'我会加强培训'——这是内部事项，用户不关心。关键是马上帮用户处理原来的问题。"
+    },
+    "case_06": {
+      "id": "case_06",
+      "user_question": "优惠券怎么用不了",
+      "auto_reply": "您好，优惠券无法使用可能有以下原因：1.未达到使用门槛金额 2.商品不在优惠券适用范围内 3.优惠券已过期 4.优惠券已使用过。请您检查优惠券的使用规则。如果确认符合使用条件仍无法使用，请联系客服核实。",
+      "human_reference": "我帮您看一下——请问您的优惠券编号或订单号是？可能是没达到使用条件，我帮您确认一下。",
+      "annotator_notes": "自动回复罗列了一堆可能原因但没有帮用户实际排查。人工回复会直接查用户的优惠券和订单状态来定位问题。"
+    },
+    "case_07": {
+      "id": "case_07",
+      "user_question": "我收到短信说账号异地登录了是真的吗",
+      "auto_reply": "您好，异地登录提醒可能是真实的也可能是诈骗短信。请您先不要点击短信中的任何链接。建议您：1.直接登录我们的官方网站或APP查看登录记录 2.修改密码 3.开启二次验证功能。如果确认存在异常登录，请立即联系客服冻结账号。",
+      "human_reference": "我帮您查一下登录记录。请问您的账号是？——如果确认有异地登录，建议立即修改密码并开启二次验证。",
+      "annotator_notes": "自动回复的防诈骗提醒是好的，但用户最需要的是'帮我确认是不是真的'。人工回复会直接查账号记录给明确答案，自动回复把判断责任推给了用户。另外'异地登录'场景下用户情绪是害怕的，自动回复的情绪安抚不够。"
+    },
+    "case_08": {
+      "id": "case_08",
+      "user_question": "这个手机壳是硅胶的还是塑料的",
+      "auto_reply": "您好，这款手机壳采用的是TPU软胶材质，具有较好的防摔性能和手感。如果您需要更具体的材质信息，可以查看商品详情页的参数说明，或联系客服获取。",
+      "human_reference": "这款手机壳是TPU软胶材质的，防摔性能和手感都不错。",
+      "annotator_notes": "用户问的是具体商品的具体问题，人工回复直接查了商品参数给出明确答案。自动回复说'可以查看商品详情页'——用户就是因为不想自己翻详情页才来问的。这是典型的'正确但没用'的回复。"
+    },
+    "case_09": {
+      "id": "case_09",
+      "user_question": "退货邮费谁出",
+      "auto_reply": "退货运费承担规则如下：质量问题导致的退货，运费由商家承担；非质量问题（如不喜欢、买错了等）的退货，运费由买家承担。具体判定标准请参考我们的退换货政策。如有疑问请联系客服。",
+      "human_reference": "质量问题退货运费由我们承担，非质量问题退货运费由您承担。请问您的退货是哪种情况？",
+      "annotator_notes": "自动回复的规则说明是正确的，但没有追问用户的具体情况来给针对性回答。人工回复会在给出规则后追问具体场景。不过作为自动回复，给出规则本身也有价值。"
+    },
+    "case_10": {
+      "id": "case_10",
+      "user_question": "刚下单还没发货能取消吗",
+      "auto_reply": "您好，订单未发货前可以申请取消。请您在订单详情页操作，或联系客服协助处理。取消后款项会在1-3个工作日退回原支付方式。",
+      "human_reference": "还没发货可以取消。请告诉我您的订单号，我帮您操作。取消后1-3个工作日退款到账。",
+      "annotator_notes": "自动回复基本正确，给出了操作路径和退款时间。但人工回复会直接帮用户操作，自动回复让用户自己去操作。不过作为自动回复，给出明确操作路径也是可接受的。"
+    },
+    "case_11": {
+      "id": "case_11",
+      "user_question": "买了两件衣服一件大了一件小了想换尺码",
+      "auto_reply": "您好，换货需要先退货再重新下单选择正确尺码。请分别发起两件商品的换货申请，按照退货地址寄回原商品，我们收到后会发出新尺码的商品。换货运费由买家承担。",
+      "human_reference": "好的，请告诉我具体是哪两件商品，分别要换成什么尺码？我帮您分别发起换货申请。",
+      "annotator_notes": "用户的问题包含两件不同的商品，需要确认具体信息才能操作。自动回复直接给出了通用流程说明，没有追问具体商品信息来帮用户处理。"
+    },
+    "case_12": {
+      "id": "case_12",
+      "user_question": "快递两天没更新了",
+      "auto_reply": "物流信息长时间未更新可能是以下原因：1.包裹正在中转途中 2.快递公司信息更新延迟 3.包裹可能出现问题。建议您耐心等待1-2天，如果仍未更新，请联系快递公司查询或联系我们的客服协助跟进。",
+      "human_reference": "我帮您查一下物流状态。请提供您的订单号——如果确实异常，我帮您联系快递公司跟进。",
+      "annotator_notes": "自动回复罗列了可能原因但没有帮用户查实际状态。人工回复会先查物流再给具体信息，必要时主动帮用户联系快递。"
+    },
+    "case_13": {
+      "id": "case_13",
+      "user_question": "我买的面膜成分表能发给我看看吗我皮肤敏感",
+      "auto_reply": "您好，面膜的成分表可以在商品详情页查看。如果您对特定成分过敏，建议您在购买前仔细核对成分表，或先购买小样进行皮肤测试。如需更详细的成分信息，可以联系品牌官方客服。",
+      "human_reference": "我帮您查一下这款面膜的成分。主要成分是XX，不含酒精和香精。如果您对某个成分过敏，可以告诉我，我帮您确认。",
+      "annotator_notes": "用户明确说了皮肤敏感，这是一个需要个性化关注的场景。自动回复让用户自己去看详情页，没有体现对用户特殊需求的关注。人工回复会主动查询成分并提供个性化建议。"
+    },
+    "case_14": {
+      "id": "case_14",
+      "user_question": "你们能不能加个功能下单前能看实物视频",
+      "auto_reply": "感谢您的宝贵建议！我们会将您的反馈转达给产品团队。目前部分商品已支持视频展示，您可以在商品详情页查看是否有视频标识。如果您有特定商品需要看实物，可以联系客服，我们会尽力协助。",
+      "human_reference": "感谢您的建议！这个想法很好。我把您的反馈记录下来转给产品团队。如果您有特别想看视频的商品，可以告诉我，我帮您看看有没有。",
+      "annotator_notes": "建议类反馈，自动回复处理得不错。表达了感谢并承诺反馈。不过人工回复会更具体一些，比如主动问用户想看哪些商品的视频。"
+    },
+    "case_15": {
+      "id": "case_15",
+      "user_question": "我上次买的东西收到是坏的这次又是坏的",
+      "auto_reply": "非常抱歉连续给您带来不好的体验。我们高度重视商品质量问题。请您先申请退货退款，退货运费由我们承担。同时我们会将您的情况反馈给品控部门，加强对该类商品的质量检查。如有需要，可以申请额外的补偿优惠券。",
+      "human_reference": "连续两次都收到问题商品，确实不应该。除了正常退款外，我帮您额外申请一张50元优惠券作为补偿，同时反馈给品控部门加强检查。",
+      "annotator_notes": "用户强调了'连续两次'，这是一个需要特殊安抚的场景。自动回复虽然提到了补偿，但语气和力度不够。人工回复会更强调对用户不满的重视，给出更具体的补偿方案。"
+    },
+    "case_16": {
+      "id": "case_16",
+      "user_question": "你们首页推荐的那两款手机哪个好",
+      "auto_reply": "您好，不同手机各有优势，适合的需求也不同。如果您能告诉我具体的使用场景和预算，我可以帮您推荐更合适的选择。您也可以查看商品详情页的用户评价和参数对比来做决策。",
+      "human_reference": "首页推荐目前有几款手机，您方便告诉我是哪两款吗？或者告诉我您的预算和使用需求，我帮您对比推荐。",
+      "annotator_notes": "用户的问题很模糊（'那两款'），需要追问具体信息。自动回复的处理方式基本合理——追问使用场景和预算。但'查看商品详情页的用户评价'把用户推走了，应该主动帮用户做对比。"
+    },
+    "case_17": {
+      "id": "case_17",
+      "user_question": "我那个退货的事顺便看看快递到没到",
+      "auto_reply": "您好，关于您的两个问题：1.退货进度请在订单详情页查看 2.快递进度可以在物流追踪页面查看。如果您能提供具体的订单号，我可以帮您查询更详细的信息。",
+      "human_reference": "两个问题我都帮您查——请提供退货订单号和快递订单号，我分别帮您确认进度。",
+      "annotator_notes": "用户一条消息里问了两个问题，自动回复没有主动帮用户查，而是让用户自己去查。人工回复会同时处理多个问题。"
+    },
+    "case_18": {
+      "id": "case_18",
+      "user_question": "那个扫地机器人用了两周就不工作了",
+      "auto_reply": "抱歉给您带来不便。扫地机器人使用两周就出现故障，属于质量问题。您的订单在30天质保期内，可以选择退货退款或者换新。请按照退货地址寄回商品，退货运费由我们承担。如有其他问题请联系客服。",
+      "human_reference": "使用两周就坏了属于质量问题。您的订单在30天质保期内，可以退货退款或换新。请问您倾向哪种？退货运费由我们承担。",
+      "annotator_notes": "自动回复基本正确，给出了质保期信息和解决方案。但人工回复会先追问用户倾向哪种方案再操作，自动回复没有做这一步确认。整体来说自动回复质量尚可。"
+    },
+    "case_19": {
+      "id": "case_19",
+      "user_question": "我要买的那个包什么时候补货",
+      "auto_reply": "您好，商品补货时间不固定，建议您关注商品页面或联系客服询问预计到货时间。您也可以将商品加入购物车，补货时系统会自动提醒您。如果长时间未补货，可以考虑查看类似的替代商品。",
+      "human_reference": "我帮您查一下补货时间。请问是哪款包？——查到后我帮您设个到货提醒，补货了第一时间通知您。",
+      "annotator_notes": "用户问的是具体商品的补货时间。自动回复没有查具体商品，给了通用建议。人工回复会实际查询补货计划并主动帮用户设置提醒。"
+    },
+    "case_20": {
+      "id": "case_20",
+      "user_question": "退货流程太复杂了搞半天都不知道怎么操作",
+      "auto_reply": "抱歉给您带来困扰。退货流程一般包括：1.在订单页面点击退货 2.选择退货原因 3.提交申请等待审核 4.按照退货地址寄回商品。如果您在某个环节遇到问题，可以截图发给客服，我们会协助您操作。",
+      "human_reference": "抱歉让您感到困扰。请问您卡在哪个环节了？我一步步帮您操作。",
+      "annotator_notes": "用户已经表达了操作困难和不满。自动回复又重复了一遍退货流程——这恰恰是用户说搞不懂的东西。人工回复会问具体卡在哪一步，然后针对性帮忙。自动回复属于'答非所问'。"
+    }
+  },
+  "validation": {
+    "n_signals": 20,
+    "usefulness_agreement": {
+      "matched": 11,
+      "total": 20,
+      "rate": 0.55,
+      "details": [
+        {
+          "case_id": "case_01",
+          "judge_score": 1.0,
+          "judge_level": "poor",
+          "human_level": "poor",
+          "matched": true
+        },
+        {
+          "case_id": "case_02",
+          "judge_score": 2.5,
+          "judge_level": "poor",
+          "human_level": "mixed",
+          "matched": false
+        },
+        {
+          "case_id": "case_03",
+          "judge_score": 3.5,
+          "judge_level": "mixed",
+          "human_level": "mixed",
+          "matched": true
+        },
+        {
+          "case_id": "case_04",
+          "judge_score": 3.0,
+          "judge_level": "mixed",
+          "human_level": "poor",
+          "matched": false
+        },
+        {
+          "case_id": "case_05",
+          "judge_score": 2.0,
+          "judge_level": "poor",
+          "human_level": "poor",
+          "matched": true
+        },
+        {
+          "case_id": "case_06",
+          "judge_score": 2.0,
+          "judge_level": "poor",
+          "human_level": "poor",
+          "matched": true
+        },
+        {
+          "case_id": "case_07",
+          "judge_score": 2.5,
+          "judge_level": "poor",
+          "human_level": "poor",
+          "matched": true
+        },
+        {
+          "case_id": "case_08",
+          "judge_score": 2.0,
+          "judge_level": "poor",
+          "human_level": "poor",
+          "matched": true
+        },
+        {
+          "case_id": "case_09",
+          "judge_score": 3.0,
+          "judge_level": "mixed",
+          "human_level": "mixed",
+          "matched": true
+        },
+        {
+          "case_id": "case_10",
+          "judge_score": 3.5,
+          "judge_level": "mixed",
+          "human_level": "mixed",
+          "matched": true
+        },
+        {
+          "case_id": "case_11",
+          "judge_score": 2.5,
+          "judge_level": "poor",
+          "human_level": "mixed",
+          "matched": false
+        },
+        {
+          "case_id": "case_12",
+          "judge_score": 4.0,
+          "judge_level": "good",
+          "human_level": "mixed",
+          "matched": false
+        },
+        {
+          "case_id": "case_13",
+          "judge_score": 2.0,
+          "judge_level": "poor",
+          "human_level": "mixed",
+          "matched": false
+        },
+        {
+          "case_id": "case_14",
+          "judge_score": 4.0,
+          "judge_level": "good",
+          "human_level": "good",
+          "matched": true
+        },
+        {
+          "case_id": "case_15",
+          "judge_score": 2.0,
+          "judge_level": "poor",
+          "human_level": "mixed",
+          "matched": false
+        },
+        {
+          "case_id": "case_16",
+          "judge_score": 4.0,
+          "judge_level": "good",
+          "human_level": "mixed",
+          "matched": false
+        },
+        {
+          "case_id": "case_17",
+          "judge_score": 3.5,
+          "judge_level": "mixed",
+          "human_level": "poor",
+          "matched": false
+        },
+        {
+          "case_id": "case_18",
+          "judge_score": 3.5,
+          "judge_level": "mixed",
+          "human_level": "mixed",
+          "matched": true
+        },
+        {
+          "case_id": "case_19",
+          "judge_score": 2.0,
+          "judge_level": "poor",
+          "human_level": "mixed",
+          "matched": false
+        },
+        {
+          "case_id": "case_20",
+          "judge_score": 2.0,
+          "judge_level": "poor",
+          "human_level": "poor",
+          "matched": true
+        }
+      ]
+    },
+    "spearman_overall_vs_human": 0.519,
+    "worst5": {
+      "judge_worst5": [
+        "case_01",
+        "case_06",
+        "case_05",
+        "case_15",
+        "case_08"
+      ],
+      "human_poor_set": [
+        "case_01",
+        "case_04",
+        "case_05",
+        "case_06",
+        "case_07",
+        "case_08",
+        "case_17",
+        "case_20"
+      ],
+      "overlap": 4
+    },
+    "anchors": [
+      {
+        "case_id": "case_08",
+        "metric": "usefulness",
+        "op": "<",
+        "threshold": 3.0,
+        "value": 2.0,
+        "passed": true
+      },
+      {
+        "case_id": "case_20",
+        "metric": "usefulness",
+        "op": "<",
+        "threshold": 3.0,
+        "value": 2.0,
+        "passed": true
+      },
+      {
+        "case_id": "case_02",
+        "metric": "accuracy",
+        "op": ">=",
+        "threshold": 4.0,
+        "value": 5.0,
+        "passed": true
+      },
+      {
+        "case_id": "case_03",
+        "metric": "accuracy",
+        "op": ">=",
+        "threshold": 4.0,
+        "value": 5.0,
+        "passed": true
+      },
+      {
+        "case_id": "case_09",
+        "metric": "accuracy",
+        "op": ">=",
+        "threshold": 4.0,
+        "value": 5.0,
+        "passed": true
+      },
+      {
+        "case_id": "case_10",
+        "metric": "accuracy",
+        "op": ">=",
+        "threshold": 4.0,
+        "value": 5.0,
+        "passed": true
+      },
+      {
+        "case_id": "case_18",
+        "metric": "accuracy",
+        "op": ">=",
+        "threshold": 4.0,
+        "value": 5.0,
+        "passed": true
+      },
+      {
+        "case_id": "case_14",
+        "metric": "usefulness",
+        "op": ">=",
+        "threshold": 3.5,
+        "value": 4.0,
+        "passed": true
+      }
+    ],
+    "anchors_passed": 8,
+    "anchors_total": 8,
+    "capability_gap": {
+      "dependent_cases": 14,
+      "gap_detected": 10,
+      "case_ids": [
+        "case_02",
+        "case_03",
+        "case_04",
+        "case_06",
+        "case_07",
+        "case_08",
+        "case_11",
+        "case_12",
+        "case_13",
+        "case_19"
+      ]
+    }
+  },
+  "capabilities": {
+    "order_lookup": {
+      "value": false,
+      "desc": "查询用户订单状态/详情"
+    },
+    "logistics_lookup": {
+      "value": false,
+      "desc": "查询物流轨迹"
+    },
+    "refund_lookup": {
+      "value": false,
+      "desc": "查询退款进度"
+    },
+    "product_lookup": {
+      "value": false,
+      "desc": "查询商品参数/成分/材质"
+    },
+    "coupon_lookup": {
+      "value": false,
+      "desc": "查询优惠券可用状态"
+    },
+    "inventory_lookup": {
+      "value": false,
+      "desc": "查询补货计划/库存"
+    },
+    "account_lookup": {
+      "value": false,
+      "desc": "查询账号登录记录"
+    },
+    "after_sales_action": {
+      "value": false,
+      "desc": "代用户执行退换/取消等操作"
+    },
+    "product_comparison": {
+      "value": false,
+      "desc": "按用户需求对比推荐商品"
+    },
+    "video_feature": {
+      "value": false,
+      "desc": "提供商品实物视频"
+    }
+  }
+}

@@ -1,0 +1,16 @@
+============================================================
+客服自动回复质量评估（任务 0109）
+运行模式：mock（评审器：mock-rules-v1）
+用例数：20
+整体加权分：84.1 / 100（严格口径对照：79.6）
+不合格（硬门槛）：0 条
+各指标均值：准确性 5.0 | 有用性 2.73 | 语气 4.25 | 忠实性 5.0
+最差 3 条：case_01（74.5 分），case_06（74.5 分），case_05（77.5 分）
+与人工信号一致性：11/20 条一致；最差 5 条重合 4/5；锚点 8/8 通过
+------------------------------------------------------------
+报告文件：
+  JSON: D:\CodexProject\ceping\outputs\mock_report.json
+  Markdown: D:\CodexProject\ceping\outputs\mock_report.md
+  HTML: D:\CodexProject\ceping\outputs\mock_report.html
+  CSV: D:\CodexProject\ceping\outputs\mock_scores.csv
+============================================================
