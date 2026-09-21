@@ -106,11 +106,16 @@ def main(argv=None):
     args = parser.parse_args(argv)
 
     if args.list_models:
-        config = config_module.load_config(args.config)
-        print("可用模型：")
-        for name in judge_llm.list_models(config):
-            print("  - " + name)
-        return 0
+        try:
+            config = config_module.load_config(args.config)
+            config_module.require_api_key(config)
+            print("可用模型：")
+            for name in judge_llm.list_models(config):
+                print("  - " + name)
+            return 0
+        except (FileNotFoundError, ValueError) as exc:
+            print("[提示] " + str(exc))
+            return 1
 
     cases = loader.load_cases(args.data)
     capabilities = loader.load_capabilities(args.capabilities)
@@ -120,8 +125,13 @@ def main(argv=None):
         model = "mock-rules-v1"
         meta_extra = {"note": "规则基线：离线、零成本、可复现；用于与 LLM 评审对照"}
     else:
-        config = config_module.load_config(args.config)
-        config_module.require_api_key(config)
+        try:
+            config = config_module.load_config(args.config)
+            config_module.require_api_key(config)
+        except (FileNotFoundError, ValueError) as exc:
+            print("[提示] " + str(exc))
+            print("配置完成后重试：python run_eval.py --mode llm")
+            return 1
         granularity = args.granularity or config.get("granularity", "case")
         results, cache_stats = judge_llm.judge_all(
             cases,
