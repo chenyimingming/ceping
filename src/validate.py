@@ -94,6 +94,14 @@ def validate(results, rows, signals):
             ys.append(LEVEL_VALUE[sig["usefulness"]])
     rho = spearman(xs, ys) if len(xs) >= 2 else 0.0
 
+    # 与人工信号更同口径的对比：用"有用性分数"（人工标注主要针对有用性）
+    xs_useful, ys_useful = [], []
+    for case_id, sig in sorted(signals.items()):
+        if case_id in by_id and sig.get("usefulness") in LEVEL_VALUE:
+            xs_useful.append(float(by_id[case_id]["metrics"]["usefulness"]["score"]))
+            ys_useful.append(LEVEL_VALUE[sig["usefulness"]])
+    rho_usefulness = spearman(xs_useful, ys_useful) if len(xs_useful) >= 2 else 0.0
+
     anchors = []
     passed = 0
     for anchor in ANCHORS:
@@ -121,6 +129,7 @@ def validate(results, rows, signals):
             "details": details,
         },
         "spearman_overall_vs_human": rho,
+        "spearman_usefulness_vs_human": rho_usefulness,
         "worst5": {
             "judge_worst5": worst5,
             "human_poor_set": sorted(poor_set),

@@ -160,6 +160,10 @@ def render_markdown(run):
         )
         add("- 综合分与人工粗分的排序相关（Spearman）：%s" % validation["spearman_overall_vs_human"])
         add(
+            "- 有用性分数与人工粗分的排序相关（Spearman，更同口径）：%s"
+            % validation.get("spearman_usefulness_vs_human", "-")
+        )
+        add(
             "- 评审最差 5 条与人工“差评集合”的重合：%d/5"
             % validation["worst5"]["overlap"]
         )
@@ -332,7 +336,10 @@ def render_html(run):
         agreement = validation["usefulness_agreement"]
         add("<div class='cards'>")
         add("<div class='card'><div class='num'>%d/%d</div><div class='lbl'>有用性逐条一致</div></div>" % (agreement["matched"], agreement["total"]))
-        add("<div class='card'><div class='num'>%s</div><div class='lbl'>排序相关（Spearman）</div></div>" % validation["spearman_overall_vs_human"])
+        add(
+            "<div class='card'><div class='num'>%s</div><div class='lbl'>排序相关：有用性 vs 人工（Spearman）</div></div>"
+            % validation.get("spearman_usefulness_vs_human", "-")
+        )
         add("<div class='card'><div class='num'>%d/5</div><div class='lbl'>最差 5 条重合</div></div>" % validation["worst5"]["overlap"])
         add("<div class='card'><div class='num'>%d/%d</div><div class='lbl'>锚点通过</div></div>" % (validation["anchors_passed"], validation["anchors_total"]))
         add("</div>")
