@@ -1,0 +1,34 @@
+{
+  "meta": {
+    "source": "由 Codex 阅读 data/human_ref.json 的 annotator_notes 后逐条推导（2026-09-21）",
+    "note": "这是推导标签，不是官方标签；仅用于验证评估方法（一致性校验），不参与评分。",
+    "levels": {
+      "poor": "标注整体对该回复持明确负面判断（如'正确但没用''答非所问'）",
+      "mixed": "标注有褒有贬，或认为'作为自动回复可以接受/也有价值'",
+      "good": "标注整体持正面判断"
+    },
+    "capability_dependent": "标注指出的差距需要系统具备'查询/代办'能力才能闭合（如查订单、查物流、查商品参数）"
+  },
+  "signals": {
+    "case_01": {"usefulness": "poor", "tone": null, "accuracy": null, "faithfulness": null, "capability_dependent": true, "key_phrases": ["把责任推给了用户", "没有体现主动服务意识"]},
+    "case_02": {"usefulness": "mixed", "tone": null, "accuracy": null, "faithfulness": null, "capability_dependent": true, "key_phrases": ["没有查具体商品，只是泛泛讲了规定", "需要用户自己去确认"]},
+    "case_03": {"usefulness": "mixed", "tone": null, "accuracy": "good", "faithfulness": null, "capability_dependent": true, "key_phrases": ["通用信息本身是准确的", "没有帮用户查实际状态"]},
+    "case_04": {"usefulness": "poor", "tone": null, "accuracy": null, "faithfulness": null, "capability_dependent": true, "key_phrases": ["没有直接给出解决方案", "增加了用户的操作负担"]},
+    "case_05": {"usefulness": "poor", "tone": "mixed", "accuracy": null, "faithfulness": null, "capability_dependent": false, "key_phrases": ["没有立刻帮用户解决原始问题", "这是内部事项"]},
+    "case_06": {"usefulness": "poor", "tone": null, "accuracy": null, "faithfulness": null, "capability_dependent": true, "key_phrases": ["没有帮用户实际排查"]},
+    "case_07": {"usefulness": "poor", "tone": "poor", "accuracy": null, "faithfulness": null, "capability_dependent": true, "key_phrases": ["把判断责任推给了用户", "情绪安抚不够"]},
+    "case_08": {"usefulness": "poor", "tone": null, "accuracy": null, "faithfulness": null, "capability_dependent": true, "key_phrases": ["正确但没用"]},
+    "case_09": {"usefulness": "mixed", "tone": null, "accuracy": "good", "faithfulness": null, "capability_dependent": false, "key_phrases": ["规则说明是正确的", "作为自动回复，给出规则本身也有价值"]},
+    "case_10": {"usefulness": "mixed", "tone": null, "accuracy": "good", "faithfulness": null, "capability_dependent": false, "key_phrases": ["基本正确", "给出明确操作路径也是可接受的"]},
+    "case_11": {"usefulness": "mixed", "tone": null, "accuracy": null, "faithfulness": null, "capability_dependent": true, "key_phrases": ["没有追问具体商品信息来帮用户处理"]},
+    "case_12": {"usefulness": "mixed", "tone": null, "accuracy": null, "faithfulness": null, "capability_dependent": true, "key_phrases": ["没有帮用户查实际状态"]},
+    "case_13": {"usefulness": "mixed", "tone": null, "accuracy": null, "faithfulness": null, "capability_dependent": true, "key_phrases": ["让用户自己去看详情页", "没有体现对用户特殊需求的关注"]},
+    "case_14": {"usefulness": "good", "tone": null, "accuracy": null, "faithfulness": null, "capability_dependent": false, "key_phrases": ["处理得不错", "表达了感谢并承诺反馈"]},
+    "case_15": {"usefulness": "mixed", "tone": "poor", "accuracy": null, "faithfulness": null, "capability_dependent": true, "key_phrases": ["语气和力度不够"]},
+    "case_16": {"usefulness": "mixed", "tone": null, "accuracy": null, "faithfulness": null, "capability_dependent": true, "key_phrases": ["把用户推走了", "应该主动帮用户做对比"]},
+    "case_17": {"usefulness": "poor", "tone": null, "accuracy": null, "faithfulness": null, "capability_dependent": true, "key_phrases": ["没有主动帮用户查"]},
+    "case_18": {"usefulness": "mixed", "tone": null, "accuracy": "good", "faithfulness": null, "capability_dependent": false, "key_phrases": ["基本正确", "整体来说自动回复质量尚可"]},
+    "case_19": {"usefulness": "mixed", "tone": null, "accuracy": null, "faithfulness": null, "capability_dependent": true, "key_phrases": ["没有查具体商品"]},
+    "case_20": {"usefulness": "poor", "tone": null, "accuracy": null, "faithfulness": null, "capability_dependent": false, "key_phrases": ["答非所问"]}
+  }
+}

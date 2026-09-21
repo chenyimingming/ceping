@@ -1,0 +1,18 @@
+{
+  "meta": {
+    "note": "系统能力清单：value 取值 true=具备、false=不具备、\"unknown\"=未知。主口径（能力边界内质量分）按此清单打分；严格口径假设全部具备。",
+    "source": "由 Codex 依据 20 条自动回复的实际行为与人工标注推导（2026-09-21），未经业务方确认；业务方确认后改这个文件即可切换评分口径。"
+  },
+  "capabilities": {
+    "order_lookup": {"value": false, "desc": "查询用户订单状态/详情"},
+    "logistics_lookup": {"value": false, "desc": "查询物流轨迹"},
+    "refund_lookup": {"value": false, "desc": "查询退款进度"},
+    "product_lookup": {"value": false, "desc": "查询商品参数/成分/材质"},
+    "coupon_lookup": {"value": false, "desc": "查询优惠券可用状态"},
+    "inventory_lookup": {"value": false, "desc": "查询补货计划/库存"},
+    "account_lookup": {"value": false, "desc": "查询账号登录记录"},
+    "after_sales_action": {"value": false, "desc": "代用户执行退换/取消等操作"},
+    "product_comparison": {"value": false, "desc": "按用户需求对比推荐商品"},
+    "video_feature": {"value": false, "desc": "提供商品实物视频"}
+  }
+}

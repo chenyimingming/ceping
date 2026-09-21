@@ -1,0 +1,15 @@
+{
+  "base_url": "https://api.deepseek.com",
+  "model": "deepseek-flash",
+  "api_key": "sk-替换为你的-DEEPSEEK-API-KEY",
+  "temperature": 0.0,
+  "timeout_seconds": 60,
+  "max_retries": 2,
+  "granularity": "case",
+  "_help": [
+    "用法：把本文件复制成 config.json，再把 api_key 换成你的真实 Key；config.json 已被 .gitignore 排除，不会提交到 GitHub。",
+    "model 可选：deepseek-flash（当前推荐，对应 DeepSeek-V4.1-Flash）、deepseek-v4-pro；旧名 deepseek-v4-flash 服务端仍接受。",
+    "granularity：case=每条回复一次调用（默认，成本低）；metric=每个指标一次调用（评分更独立，调用次数约为 4 倍）。",
+    "查询你账号下实际可用的模型名：python run_eval.py --mode llm --list-models"
+  ]
+}
