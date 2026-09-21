@@ -4,6 +4,8 @@
 对 `data/auto_replies.json` 里的 20 条自动回复逐条评分，输出整体得分、各指标分布与最差 3 条分析，
 并用 `data/human_ref.json` 的人工标注验证评估方法是否靠谱。
 
+**仓库地址**：https://github.com/chenyimingming/ceping
+
 ## 1. 快速开始
 
 ### 1.1 环境
