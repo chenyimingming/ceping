@@ -1,6 +1,6 @@
 # 客服自动回复质量评估报告（任务 0109）
 
-- 生成时间：2026-09-21 15:22:27（Asia/Shanghai）
+- 生成时间：2026-09-21 15:59:25（Asia/Shanghai）
 - 运行模式：llm（评审器：deepseek-flash）
 - 用例数：20
 - 数据指纹：auto_replies.json=7d431d59ef68，human_ref.json=5995bf08b7fc，human_signals.json=5b881ff5eb2f
