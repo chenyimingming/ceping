@@ -1,6 +1,6 @@
 {
   "meta": {
-    "source": "由 Codex 阅读 data/human_ref.json 的 annotator_notes 后逐条推导（2026-09-21）",
+    "source": "依据 data/human_ref.json 的标注分析逐条推导（2026-09-21）",
     "note": "这是推导标签，不是官方标签；仅用于验证评估方法（一致性校验），不参与评分。",
     "levels": {
       "poor": "标注整体对该回复持明确负面判断（如'正确但没用''答非所问'）",

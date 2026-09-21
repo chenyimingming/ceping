@@ -1,0 +1,17 @@
+============================================================
+客服自动回复质量评估（任务 0109）
+运行模式：llm（评审器：deepseek-flash）
+用例数：20
+整体加权分：81.5 / 100（严格口径对照：75.5）
+不合格（硬门槛）：0 条
+各指标均值：准确性 4.3 | 有用性 3.3 | 语气 4.3 | 忠实性 4.55
+最差 3 条：case_11（63.0 分），case_08（69.0 分），case_19（71.0 分）
+与人工信号一致性：10/20 条一致；最差 5 条重合 1/5；锚点 7/8 通过
+LLM 缓存：命中 20 次，新请求 0 次
+------------------------------------------------------------
+报告文件：
+  JSON: D:\CodexProject\ceping\outputs\llm_report.json
+  Markdown: D:\CodexProject\ceping\outputs\llm_report.md
+  HTML: D:\CodexProject\ceping\outputs\llm_report.html
+  CSV: D:\CodexProject\ceping\outputs\llm_scores.csv
+============================================================
